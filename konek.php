@@ -14,7 +14,7 @@ and open the template in the editor.
             $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
 	
             if($mysqli){
-                echo 'Sudah konek';
+                echo 'Sudah Konek';
             }else{
                 echo 'belum konek';
             }
