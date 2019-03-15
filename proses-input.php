@@ -13,9 +13,9 @@ if (isset($_POST['tambah'])){
 	$query = mysqli_query($mysqli, $sql);
 
 	if ($query){
-		header('Location: index.php?status=sukses');
+		header('Location: homekop.html?status=sukses');
 	} else {
-		header('Location: index.php?status=gagal');
+		header('Location: homekop.html?status=gagal');
 	}
 } else {
 	die("Akses Dilarang!");
