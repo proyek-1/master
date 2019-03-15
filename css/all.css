@@ -13,6 +13,19 @@ body {
 p {
   font-family: "Source Sans Pro", sans-serif; }
 
+.warna {
+	background: #2192C5;
+	padding-bottom: 4px;
+}
+
+.warna1 {
+	background: #2192C5;
+}
+
+.kiri {
+	
+}
+
 .btn, a {
   -webkit-transition: color linear .4s, background-color linear .4s, border-color linear .4s;
   transition: color linear .4s, background-color linear .4s, border-color linear .4s; }
@@ -97,8 +110,10 @@ p {
   #nav .nav-drop {
     overflow: hidden; }
   #nav ul {
-    padding: 9px 0 5px;
-    margin: 0; }
+	padding: 9px 0 5px;
+	margin: 0;
+	text-align: center;
+}
   #nav li {
     display: inline-block;
     vertical-align: top;
