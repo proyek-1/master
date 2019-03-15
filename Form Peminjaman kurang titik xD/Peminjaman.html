@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Peminjaman</title>
+	<link rel="stylesheet" href="bootstrap.css">
+    <style type="text/css">
+<!--
+.style1 {color: #000000} 
+{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+		body{
+			background-size:cover;
+			background-attachment: fixed;
+		}
+	.ul{
+	
+	background-color:#0000FF}
+--> .
+    </style>
+</head>
+
+<body background="gambar kota.jpg" style="width:100%">
+					<div class="nav nav-pills nav-justified">
+						<ul class="nav nav-pills nav-justified" >
+							<li><a href="">HOME</a></li>
+							<li><a href="">PEMINJAMAN</a></li>
+							<li><a href="">ANGSURAN</a></li>
+							<li><a href="">KONTAK</a></li>
+							<li><a href="">DAFTAR ANGGOTA</a></li>
+						</ul>
+					</div>
+<form action="../../../../Peminjaman.html" method="get">
+
+<div class="Logo">
+    <p><img src="logo koperasi.png" width="331" height="195"/></p>
+    <h1 class="style1" style="color:#FFFFFF" align="center">Peminjaman Koperasi Maju Jaya</h1>
+</div>
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">No Peminjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">No Anggota</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Nama</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Besar Pinjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname">
+    </div>
+  </div>  <div class="row">
+    <div class="col-25">
+      <label for="lname">Total Pinjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Keterangan</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject"style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Tanggal Peminjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="lname" name="lastname">
+    </div>
+  </div>
+
+  <div class="row" align="center">
+    <input type="submit" value="Simpan">
+	<input type="submit" value="Reset">
+	<input type="submit" value="Kembali">
+  </div>
+  </form>
+</div>
+
+</form>
+</body>
+</html>
