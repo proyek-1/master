@@ -66,6 +66,7 @@ p {
     max-width: 100%;
     height: auto; }
 
+
 #header {
   position: absolute;
   top: 0;
@@ -178,12 +179,14 @@ p {
   padding: 104px 0 0;
   background: transparent; }
   .visual .bg-stretch {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-image: url(gambar/gambar%20kota.jpg);
+}
   .visual > .container {
     display: inline-block;
     vertical-align: top;
@@ -1194,5 +1197,24 @@ p {
   [href^='tel:'] {
     cursor: default;
     pointer-events: none; } }
+
+.unik{
+  background:#2C97DF;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+ border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+
 
 /*# sourceMappingURL=all.css.map */

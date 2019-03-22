@@ -230,7 +230,7 @@ th {
 
   select {
     background: #fff !important; }
-
+	
   .navbar {
     display: none; }
 
@@ -1198,7 +1198,9 @@ h2, .h2 {
   font-size: 34px; }
 
 h3, .h3 {
-  font-size: 28px; }
+	font-size: 28px;
+	color: #FFFFFF;
+}
 
 h4, .h4 {
   font-size: 20px; }
