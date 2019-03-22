@@ -13,19 +13,6 @@ body {
 p {
   font-family: "Source Sans Pro", sans-serif; }
 
-.warna {
-	background: #2192C5;
-	padding-bottom: 4px;
-}
-
-.warna1 {
-	background: #2192C5;
-}
-
-.kiri {
-	
-}
-
 .btn, a {
   -webkit-transition: color linear .4s, background-color linear .4s, border-color linear .4s;
   transition: color linear .4s, background-color linear .4s, border-color linear .4s; }
@@ -79,6 +66,7 @@ p {
     max-width: 100%;
     height: auto; }
 
+
 #header {
   position: absolute;
   top: 0;
@@ -110,10 +98,8 @@ p {
   #nav .nav-drop {
     overflow: hidden; }
   #nav ul {
-	padding: 9px 0 5px;
-	margin: 0;
-	text-align: center;
-}
+    padding: 9px 0 5px;
+    margin: 0; }
   #nav li {
     display: inline-block;
     vertical-align: top;
@@ -193,12 +179,14 @@ p {
   padding: 104px 0 0;
   background: transparent; }
   .visual .bg-stretch {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-image: url(gambar/gambar%20kota.jpg);
+}
   .visual > .container {
     display: inline-block;
     vertical-align: top;
@@ -1209,5 +1197,24 @@ p {
   [href^='tel:'] {
     cursor: default;
     pointer-events: none; } }
+
+.unik{
+  background:#2C97DF;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+ border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+
 
 /*# sourceMappingURL=all.css.map */

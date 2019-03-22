@@ -29,78 +29,6 @@ video {
   display: inline-block;
   vertical-align: baseline; }
 
-.style1 {color: #000000} 
-{
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-		body{
-			background-size:cover;
-			background-attachment: fixed;
-		}
-	.ul{
-	
-	background-color:#0000FF}
-
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -302,7 +230,7 @@ th {
 
   select {
     background: #fff !important; }
-
+	
   .navbar {
     display: none; }
 
@@ -1270,7 +1198,9 @@ h2, .h2 {
   font-size: 34px; }
 
 h3, .h3 {
-  font-size: 28px; }
+	font-size: 28px;
+	color: #FFFFFF;
+}
 
 h4, .h4 {
   font-size: 20px; }
@@ -3493,27 +3423,7 @@ tbody.collapse.in {
   border-top-left-radius: 0; }
 
 .input-group-addon:last-child {
-  border-left: 0; }.nav-justified, .nav-tabs.nav-justified {
-  width: 100%; }
-  .nav-justified > li, .nav-tabs.nav-justified > li {
-    float: none; }
-    .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
-      text-align: center;
-      margin-bottom: 4px;
-	  color:#FFFFFF;
-	  background-color:#0000FF}
-  .nav-justified > .dropdown .dropdown-menu {
-    top: auto;
-    left: auto; }
-  @media (min-width: 768px) {
-    .nav-justified > li, .nav-tabs.nav-justified > li {
-      display: table-cell;
-      width: 1%; }
-      .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
-        margin-bottom: 0; } }
-
-
-
+  border-left: 0; }
 
 .input-group-btn {
   position: relative;
@@ -5712,5 +5622,3 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
-.gambar {
-}
