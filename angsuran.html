@@ -1,95 +1,292 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>home</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/all.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title style color="black">Angsuran Koperasi Maju Jaya</title>
+  <style type="text/css">
+    {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+  </style>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
 </head>
-<body>
-		<header id="header">
-			<div class="container">
-				<div class="logo"><a href="#"><img src="gambar/logo koperasi.png" alt="logoKop" width="600" height="338"></a></div>
-				<nav id="nav">
-					<div class="opener-holder">
-						<a href="#" class="nav-opener"><span></span></a>
-					</div>
-					<div class="nav-drop">
-						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="">PEMINJAMAN</a></li>
-							<li><a href="">ANGSURAN</a></li>
-							<li><a href="">KONTAK</a></li>
-							<li><a href="">DAFTAR ANGGOTA</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</header>
-<section class="visual">
-		<div class="container">
-			<div class="text-block">
-				<div class="heading-holder">
-					<h1 style="color: white">KOPERASI MAJU JAYA</h1>
-				</div>
-				<p><h2 style="color: white">Koperasi pilihan Anda</h2></p>
-			</div>
-		</div>
-		<img src="gambar/gambar kota.jpg" alt="" width="1600" class="bg-stretch">
-	</section>
-	<section class="main">
-		<div class="container">
-			<div id="cta">
-				
-			</div>
-			<div align="">
-				<div align="center"><h3 style="color: black">MISI DAN TUJUAN</h3></div>
-				MISI<br>
-				1. Meningkatkan pelayanan simpan pinjam untuk usaha produktif anggota Koperasi <br>
-				2. Meningkatkan pelayanan kebutuhan pokok anggota<br>
-				3. Meningkatkan peran serta anggota Koperasi dalam pengembangan Koperasi ke arah yang lebih maju dan produktif<br>
-				4. Meningkatkan pembinaan anggota dalam pengembangan usaha unggulan lokalita<br>
-				5. Meningkatkan kemitraan dengan pihak lain dalam pengembangan Koperasi
-			</div>
-			<div align="">
-				TUJUAN<br>
-				1. Meningkatkan tali persaudaraan dan kebersamaan diantara sesama anggota Koperasi <br>
-				2. Memberdayakan kegiatan Koperasi hingga fungsinya lebih maksimal, efisien, efektif dan produktif dalam meningkatkan kesejahteraan anggotanya<br>
-				3. Meningkatkan pendapatan serta pemerataan kesejahteraan anggota Koperasi secara profesional<br>
-				4. Membuka lapangan pekerjaan baru yang terbuka bagi anggota koperasi dan keluarganya <br>
-			</div>
-		</div>
-	</section>
-		<h3 align="center"><font style="color: #000000">PILIHAN</font></h3>
-	<section class="area">
-		<table align="center">
-			<td align="left">
-				<img src="gambar/home-icon.png" width="110" alt="">
-				<button>HOME</button>
-			</td>
-			<td align="center">
-				<img src="gambar/login.jpeg" width="110" alt="">
-				<button>LOGIN</button>
-			</td>
-			<td align="right">
-				<img src="gambar/registrasi.png" alt="" width="110">
-				<button>REGISTER</button>
-			</td>
-		</table>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Koperasi Maju Jaya</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Peminjaman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Angsuran</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Daftar Anggota</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">Angsuran Koperasi </h1>
+          <h2 class="text-uppercase text-white font-weight-bold">Maju Jaya</h2>
+          <hr class="divider my-4">
+          <section class="area">
+            <div align="">
+        <table class="table table-bordered">
+  <div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">tanggal Angusran</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">No.Angsuran</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">No.Anggota</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Nama</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Sisa pinjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Angsuran Bulanan</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">lama Keterlambatan</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Denda</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">total Bayar</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Bayar Angsuran</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Kembalian</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  
+    <table align="center">
+      <td align="left">
+        <button>SIMPAN</button>
+      </td>
+      <td align="center">
+        <button>RESET</button>
+      </td>
+      <td align="right">
+        <button>KEMBALI</button>
+      </td>
+    </table>
 </section>
-		<section class="main">
-		<div class="container">
-			<div align="center">
-				<h3 style="color: black">KONTAK KAMI</h3>
-				KOPERASI MAJU JAYA<br>
-				NO 100 JL.GEDE<br>
-				11456 MALANG RAYA<br>
-				TELPON : +62 3 2254 5344<br>
-				EMAIL : kopmj@gmail.com
-			</div>
-			<div align="center"><br><br>
-				<div id='copyright'>Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Koperasi Maju Jaya | MJ</div>
-			</div>
-		</div>
-	</section>
-	</body>
+        </div>
+      </div>
+    </div>
+  </header>
+<td>
+  <td>
+    <td>
+      <td>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Kontak Kami</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Koperasi Maju Jaya</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>+62322545344</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="mailto:contact@yourwebsite.com">kopmj@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Koperasi Maju Jaya | MJ</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
 </html>
