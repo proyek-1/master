@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Register</title>
+	<title>Daftar Anggota</title>
 </head>
 <body>
 	<header>
@@ -10,24 +10,15 @@
 	<form action="proses-input.php" method="POST">
 		<fieldset>
 			<p>
-				<label>ID Anggota: </label>
-            	<br><select name="id_anggota">
-	                <?php  
-	                include 'koneksi.php';
-	                $query = mysqli_query($mysqli,"SELECT * FROM anggota");
-	                while ($array = mysqli_fetch_assoc($query)) {
-	                ?>
-	            <option><?php echo $array['nama']; ?></option>
-	            	<?php } ?>    
-            </select></br>
-			</p>
-			<p>
 				<label for="nama">Nama Anggota: </label>
 				<br><input type="text" name="nama" placeholder="Nama"/></br>
 			</p>
 			<p>
-				<label for="harga">Jenis Kelamin: </label>
-				<br><input type="select" name="jenis_kelamin" placeholder="Jenis Kelamin"/></br>
+				Jenis Kelamin:<br>
+				  <input type="radio" name="Jenis Kelamin" id="Laki-Laki" value="Laki-Laki">
+				  <label for="male">laki-Laki</label><br>
+				<input type="radio" name="Jenis Kelamin" id="Perempuan" value="Perempuan">
+				<label for="female">Perempuan</label><br>
 			</p>
 			<p>
 				<label for="stok">Alamat: </label>
