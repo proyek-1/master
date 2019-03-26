@@ -14,12 +14,11 @@ and open the template in the editor.
             $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
 	
             if($mysqli){
-                echo 'Sudah Konek';
+                header('terkoneksi');
             }else{
-                echo 'belum konek';
+                header('belum terkoneksi');
             }
         ?>
         <br>
-        <a href="homeKop.html">Masuk Menu</a>
     </body>
 </html>
