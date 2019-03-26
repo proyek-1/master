@@ -14,9 +14,9 @@ and open the template in the editor.
             $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
 	
             if($mysqli){
-                header('terkoneksi');
+                header('sukses');
             }else{
-                header('belum terkoneksi');
+                header('gagal');
             }
         ?>
         <br>

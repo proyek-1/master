@@ -131,7 +131,7 @@ input[type=submit]:hover {
           <h2 class="text-uppercase text-white font-weight-bold">Maju Jaya</h2>
           <hr class="divider my-4">
           <section class="area">
-            <div align="">
+            <div align="center">
         <table class="table table-bordered">
   <div class="container">
   <form action="proses-input_angsuran.php">
@@ -144,13 +144,13 @@ input[type=submit]:hover {
     </div>
   </div>
   <div class="row">
-      <div class="col-25">
-        <label for="tanggal_angsuran">Tanggal Angsuran</label>
-      </div>
-      <div class="col-75">
-        <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="Tanggal Angsuran">
-      </div>
+    <div class="col-25">
+      <label for="tanggal_angsuran">Tanggal Angsuran</label>
     </div>
+    <div class="col-75">
+      <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="Tanggal Angsuran">
+    </div>
+  </div>
   <div class="row">
     <div class="col-25">
       <label for="id_anggota">No.Anggota</label>
@@ -226,7 +226,7 @@ input[type=submit]:hover {
   
     <table align="center">
       <td align="left">
-        <button value="tambah" name="tambah">SIMPAN</button>
+        <button type="submit" value="tambah" name="tambah">SIMPAN</button>
       </td>
       <td align="center">
         <button>RESET</button>
@@ -235,7 +235,7 @@ input[type=submit]:hover {
         <button>KEMBALI</button>
       </td>
     </table>
-  </form>
+</form>
   <!-- Contact Section -->
   <section class="page-section" id="contact">
     <div class="container">
@@ -254,7 +254,7 @@ input[type=submit]:hover {
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
           <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">kopmj@gmail.com</a>
+          <a class="d-block" href="mailto:kopmj@gmail.com">kopmj@gmail.com</a>
         </div>
       </div>
     </div>
