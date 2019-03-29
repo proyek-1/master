@@ -109,9 +109,10 @@ input[type=submit]:hover {
       }
       ?>
       <p>
-
-      <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
-  <table border="1" align="center" cellpadding="5" cellspacing="2">
+		  <section class="main">
+			  <div class="container">
+  <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
     <thead>
       <tr>
         <th>ID Angsuran</th>
@@ -133,6 +134,7 @@ input[type=submit]:hover {
         $query = mysqli_query($mysqli, "SELECT * FROM angsuran");
         while($hasil  = mysqli_fetch_assoc($query)) {
       ?>
+		
       <tr>
         <td><?php echo $hasil['id_angsuran']?></td>
         <td><?php echo $hasil['tanggal_angsuran']?></td>
@@ -151,6 +153,8 @@ input[type=submit]:hover {
       </tr>
       <?php }?>
     </tbody>
+	  </div>
+	  </section>
   </table>
 
   <div class="row" align="center">
