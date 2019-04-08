@@ -4,7 +4,6 @@ include 'konek.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-
 if (!empty($username) && !empty($password)) {
    $sql = mysqli_query($connect, "SELECT * FROM user WHERE username = '$username' AND password = '$password'");
    $result = mysqli_num_rows($sql);
