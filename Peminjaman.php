@@ -96,15 +96,7 @@ input[type=submit]:hover {
     <h1 class="style1" style="color:#FFFFFF" align="center">Peminjaman Koperasi Maju Jaya</h1>
 </div>
 <div class="container">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="id_peminjaman">No Peminjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_peminjaman" name="id_peminjaman">
-    </div>
-  </div>
+  <form action="proses-input_peminjaman.php">
   <div class="row">
     <div class="col-25">
       <label for="id_anggota">No Anggota</label>
