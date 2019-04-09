@@ -96,18 +96,6 @@ input[type=submit]:hover {
 </div>
 
 
-<?php 
-      require_once 'konek.php';
-      if (isset($_GET['kata_kunci'])) {
-        $kata_kunci = $_GET['kata_kunci'];
-        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman
-                    WHERE 
-                    id_anggota  LIKE '%$kata_kunci%'
-                    ");
-      }else{
-        $query = mysqli_query($mysqli,"SELECT * FROM peminjaman where id_deleted=0");
-      }
-      ?>
       <p>
 		  <section class="main">
 			  <div class="container">
