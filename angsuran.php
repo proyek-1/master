@@ -134,7 +134,7 @@ input[type=submit]:hover {
             <div align="center">
         <table class="table table-bordered">
   <div class="container">
-  <form action="proses-input_angsuran.php">
+  <form action="proses-input_angsuran.php" method="POST">
   <div class="row">
     <div class="col-25">
       <label for="id_angsuran">No.Angsuran</label>
@@ -213,14 +213,6 @@ input[type=submit]:hover {
     </div>
     <div class="col-75">
       <input type="text" id="bayar_angsuran" name="bayar_angsuran" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="kembalian">Kembalian</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="kembalian" name="kembalian" placeholder="">
     </div>
   </div>
   

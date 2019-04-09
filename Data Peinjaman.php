@@ -95,7 +95,61 @@ input[type=submit]:hover {
     <h1 class="style1" style="color:#FFFFFF" align="center"> Data Angsuran Koperasi Maju Jaya</h1>
 </div>
 
-  
+
+<?php 
+      require_once 'konek.php';
+      if (isset($_GET['kata_kunci'])) {
+        $kata_kunci = $_GET['kata_kunci'];
+        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman
+                    WHERE 
+                    id_anggota  LIKE '%$kata_kunci%'
+                    ");
+      }else{
+        $query = mysqli_query($mysqli,"SELECT * FROM peminjaman where id_deleted=0");
+      }
+      ?>
+      <p>
+		  <section class="main">
+			  <div class="container">
+  <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
+    <thead>
+      <tr>
+        <th>No Peminjaman</th>
+        <th>No Anggota</th>
+        <th>Nama</th>
+        <th>Besar Pinjaman</th>
+        <th>Total Pinjaman</th>
+        <th>Keterangan</th>
+        <th>Tanggal Peminjaman</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <?php
+        require_once 'konek.php';
+        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman");
+        while($hasil  = mysqli_fetch_assoc($query)) {
+      ?>
+		
+      <tr>
+        <td><?php echo $hasil['id_peminjaman']?></td>
+        <td><?php echo $hasil['id_anggota']?></td>
+        <td><?php echo $hasil['nama']?></td>
+        <td><?php echo $hasil['besar_pinjaman']?></td>
+        <td><?php echo $hasil['total_pinjaman']?></td>
+        <td><?php echo $hasil['keterangan']?></td>
+        <td><?php echo $hasil['tanggal_meminjam']?></td>
+        <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+              <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+          </center>
+          </td>
+      </tr>
+      <?php }?>
+    </tbody>
+	  </div>
+	  </section>
+  </table>
 
   <div class="row" align="center">
   <!-- <input type="submit" value="Kembali"> -->

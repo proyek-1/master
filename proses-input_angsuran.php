@@ -12,10 +12,9 @@ if (isset($_POST['tambah'])){
 	$denda = $_POST['denda'];
 	$total_bayar = $_POST['total_bayar'];
 	$bayar_angsuran = $_POST['bayar_angsuran'];
-	$kembalian = $_POST['kembalian'];
 
-	$sql = "INSERT INTO angsuran (id_angsuran, tanggal_angsuran, id_anggota, nama, sisa_pinjaman, angsuran_bulanan, lama_keterlambatan, denda, total_bayar, bayar_angsuran, kembalian) VALUES 
-	('$id_angsuran', '$tanggal_angsuran', '$id_anggota', '$nama', '$sisa_pinjaman', '$angsuran_bulanan','$lama_keterlambatan','$denda','$total_bayar','$bayar_angsuran','$kembalian')";
+	$sql = "INSERT INTO angsuran VALUES 
+	('$id_angsuran', '$tanggal_angsuran', '$id_anggota', '$nama', '$sisa_pinjaman', '$angsuran_bulanan','$lama_keterlambatan','$denda','$total_bayar','$bayar_angsuran')";
 	$query = mysqli_query($mysqli, $sql);
 
 	if ($query){

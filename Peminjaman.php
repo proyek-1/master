@@ -89,7 +89,7 @@ input[type=submit]:hover {
 							<li><a href="">DAFTAR ANGGOTA</a></li>
 						</ul>
 					</div>
-<form action="../../../../Peminjaman.html" method="get">
+<form action="proses-input_peminjaman.php" method="POST">
 
 <div class="Logo">
     <p><img src="logo koperasi.png" width="331" height="195"/></p>
@@ -99,62 +99,62 @@ input[type=submit]:hover {
   <form action="/action_page.php">
   <div class="row">
     <div class="col-25">
-      <label for="fname">No Peminjaman</label>
+      <label for="id_peminjaman">No Peminjaman</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname">
+      <input type="text" id="id_peminjaman" name="id_peminjaman">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">No Anggota</label>
+      <label for="id_anggota">No Anggota</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname">
+      <input type="text" id="id_anggota" name="id_anggota">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">Nama</label>
+      <label for="nama">Nama</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname">
+      <input type="text" id="nama" name=" nama">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">Besar Pinjaman</label>
+      <label for="besar_pinjaman">Besar Pinjaman</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname">
+      <input type="text" id="besar_pinjaman" name="besar_pinjaman">
     </div>
   </div>  <div class="row">
     <div class="col-25">
-      <label for="lname">Total Pinjaman</label>
+      <label for="total_pinjaman">Total Pinjaman</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname">
+      <input type="text" id="total_pinjaman" name="total_pinjaman">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">Keterangan</label>
+      <label for="keterangan">Keterangan</label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" style="height:200px"></textarea>
+      <textarea id="keterangan" name="keterangan" style="height:200px"></textarea>
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">Tanggal Peminjaman</label>
+      <label for="tanggal_meminjam">Tanggal Peminjaman</label>
     </div>
     <div class="col-75">
-      <input type="date" id="lname" name="lastname">
+      <input type="date" id="tanggal_meminjam" name="tanggal_meminjam">
     </div>
   </div>
 
   <div class="row" align="center">
-    <input type="submit" value="Simpan">
+    <input type="submit" value="Tambah" name="tambah">
 	<input type="submit" value="Reset">
 	<input type="submit" value="Kembali">
   </div>
