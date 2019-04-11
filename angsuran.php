@@ -87,13 +87,13 @@
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 
           <div class="container">
-          <div class="text-center"></div>
+					<div class="text-center"></div>
+					<form class="form-horizontal">
           Tanggal Angsuran :
-		<form class="form-horizontal">
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal"></label>
 				<div class="col-sm-10">
-					<input type="date" class="form-control">
+					<input type="date" class="form-control" id="tanggal">
 				</div>
       </div>
 
@@ -160,9 +160,11 @@
 					<input type="text" class="form-control" id="bayar">
 				</div>
 			</div>				
-      <button type="submit" class="btn btn-danger">Tambah</button>
-      <button type="submit" class="btn btn-danger">Reset</button>
-      <button type="submit" class="btn btn-danger">Simpan</button>
+			<tr>
+        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
+        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+      <tr>
 		</form>		
 	</div>
 </section>
