@@ -55,14 +55,9 @@
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
   <div id="preloader"></div>
-
-  	<div id="search-wrapper">
-  		<input id="search-box" placeholder="Search" />
-  	</div>  
-  
 <div id="navbar-main"> </div>
 	<div class="" align="center">
-	<section class="textdivider single-post-header"> </section>
+	
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 				<form action="proses-input.php" method="POST" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-32">
@@ -75,50 +70,55 @@
 						<input class="input100" type="text" name="username" placeholder="Nama">
 						<span class="focus-input100"></span>
 					</div>
-          
-          <div>
+
 					<span class="txt1 p-b-11">
-						Jenis Kelamin:<br>
+					<br>Jenis Kelamin:
 					</span>
-				  <input type="radio" name="jenis_kelamin" id="L" value="L" >
-		 			<label for="L">Laki-Laki</label><br>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
+					<input type="radio" name="jenis_kelamin" id="L" value="L">
+				  <label for="L">Laki-Laki</label><br>
 				  <input type="radio" name="jenis_kelamin" id="P" value="P">
-					<label for="P">Perempuan</label><br>
+				  <label for="P">Perempuan</label><br>
           </div>
 
-          <div>
           <span class="txt1 p-b-11">
-					<br>Alamat
+					<br>Alamat:
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
 						<input class="input100" type="text" name="alamat" placeholder="Alamat">
 						<span class="focus-input100"></span>
           </div>
 
-					<div>
-          <span class="txt1 p-b-11">
-					Pekerjaan
+					<span class="txt1 p-b-11">
+					<br>Pekerjaan:
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Pekerjaan is required">
-						<input class="input100" type="text" name="pekerjaan" placeholder="Pekerjaan">
+						<input class="input100" type="text" name="pekerjaan" placeholder="Perkejaan">
 						<span class="focus-input100"></span>
           </div>
 
-					<div>
-          <span class="txt1 p-b-11">
-					<br>No. Handphone
+					<span class="txt1 p-b-11">
+					<br>No Telepon:
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "No. Handphone is required">
-						<input class="input100" type="text" name="no_handphone" placeholder="No. Handphone">
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "No Telepon is required">
+						<input class="input100" type="text" name="no_handphone" placeholder="No Telepon">
 						<span class="focus-input100"></span>
-          </div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn"> 
-							Login
-						</button>
 					</div>
-</div>
+		
+					
+					
+					<div class="container-login100-form-btn">
+					  <button type="submit" name="tambah" value="Tambah" class="login100-form-btn"> 
+							Register
+						</button>
+
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+						<button> 
+							<a href="index.html" style="color: black">Kembali</a>
+						</button>
+						</div>
+					</div>
 
 					</div>
 

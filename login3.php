@@ -106,6 +106,11 @@
 						<button class="login100-form-btn"> 
 							Login
 						</button>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+						<button> 
+							<a href="index.html" style="color: black">Kembali</a>
+						</button>
 					</div>
 
 				</form>
