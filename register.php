@@ -111,9 +111,9 @@
 					  <button type="submit" name="tambah" value="Tambah" class="login100-form-btn"> 
 							Register
 						</button>
+
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-						
-						<a href="index.html">
+
 						<button> 
 							<a href="index.html" style="color: black">Kembali</a>
 						</button>
