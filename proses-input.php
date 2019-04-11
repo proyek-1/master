@@ -2,7 +2,7 @@
 include ("konek.php");
 
 if (isset($_POST['tambah'])){
-	$id_kategori = $_POST['id_anggota'];
+	$id_anggota = $_POST['id_anggota'];
 	$nama = $_POST['nama'];
 	$jenis_kelamin = $_POST['jenis_kelamin'];
 	$alamat = $_POST['alamat'];
@@ -13,9 +13,9 @@ if (isset($_POST['tambah'])){
 	$query = mysqli_query($mysqli, $sql);
 
 	if ($query){
-		header('Location: homekop.html?status=sukses');
+		header('Location: index.html?status=sukses');
 	} else {
-		header('Location: homekop.html?status=gagal');
+		header('Location: index.html?status=gagal');
 	}
 } else {
 	die("Akses Dilarang!");
