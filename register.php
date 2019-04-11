@@ -78,7 +78,7 @@
           
           <div>
 					<span class="txt1 p-b-11">
-						Jenis Kelamin:
+						Jenis Kelamin:<br>
 					</span>
 				  <input type="radio" name="jenis_kelamin" id="L" value="L" >
 		 			<label for="L">Laki-Laki</label><br>
@@ -88,12 +88,36 @@
 
           <div>
           <span class="txt1 p-b-11">
-					Nama Anggota:
+					<br>Alamat
 					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" placeholder="Nama">
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
+						<input class="input100" type="text" name="alamat" placeholder="Alamat">
 						<span class="focus-input100"></span>
           </div>
+
+					<div>
+          <span class="txt1 p-b-11">
+					Pekerjaan
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Pekerjaan is required">
+						<input class="input100" type="text" name="pekerjaan" placeholder="Pekerjaan">
+						<span class="focus-input100"></span>
+          </div>
+
+					<div>
+          <span class="txt1 p-b-11">
+					<br>No. Handphone
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "No. Handphone is required">
+						<input class="input100" type="text" name="no_handphone" placeholder="No. Handphone">
+						<span class="focus-input100"></span>
+          </div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"> 
+							Login
+						</button>
+					</div>
 </div>
 
 					</div>
