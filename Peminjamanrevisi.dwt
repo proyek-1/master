@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>0
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<style>
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+</style>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+		<header id="header">
+			<div class="container">
+				<div class="logo"><a href="#"><img src="gambar/logo koperasi.png" alt="logoKop" width="600" height="338" /></a></div>
+				<nav id="nav">
+					<div class="opener-holder">
+						<a href="#" class="nav-opener"><span></span></a>
+					</div>
+					<div class="nav-drop">
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="">PEMINJAMAN</a></li>
+							<li><a href="">ANGSURAN</a></li>
+							<li><a href="">KONTAK</a></li>
+							<li><a href="">DAFTAR ANGGOTA</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+<div class="Logo">
+    <p><img src="logo koperasi.png" width="196"/></p>
+    <p>Peminjaman</p>
+<p>Koperasi Maju Jaya</p>
+</div>
+<form action="/my-handling-form-page" method="post">
+  <div>
+    <label for="name">No.Peminjaman:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">No.Anggota:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+    <div>
+    <label for="mail">Besar Pinjaman:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+    <div>
+    <label for="mail">Total Pinjaman:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Keterangan:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div>
+  	<label for="msg">Tanggal Peminjaman</label>
+  	
+  </div>
+</form>
+</body>
+</html>

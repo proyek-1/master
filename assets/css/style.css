@@ -16,6 +16,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+<<<<<<< HEAD
+=======
 	font-family: sans-serif;
 	background: #d5f0f3;
 }
@@ -67,6 +69,7 @@ label{
 	color: #232323;
 	text-decoration: none;
 	font-size: 10pt;
+>>>>>>> d59f2a71769ca3c7c68ad51ba42dfeb7a2f17885
 }
 
 ::-moz-selection {
