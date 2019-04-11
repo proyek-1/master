@@ -52,7 +52,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="peminjaman.html">Peminjaman</a></li>
                 <li><a href="angsuran.html">Angsuran</a></li>
-								<li><a href="Data Peinjaman.html">Data Peminjaman</a></li>
+								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
                 <li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
@@ -60,8 +60,8 @@
 						<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="login3.php">Admin</a></li>
-                <li><a href="login.html">Anggota</a></li>
+								<li><a href="login.html">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
               </ul>
             </li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
@@ -93,7 +93,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal"></label>
 				<div class="col-sm-10">
-					<input type="date" class="form-control" id="tanggal">
+					<input type="date" class="form-control" id=>
 				</div>
       </div>
 

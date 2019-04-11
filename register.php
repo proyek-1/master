@@ -76,9 +76,9 @@
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
 					<input type="radio" name="jenis_kelamin" id="L" value="L">
-				  <label for="L">Laki-Laki</label><br>
+				  <label for="L">Laki-Laki</label>
 				  <input type="radio" name="jenis_kelamin" id="P" value="P">
-				  <label for="P">Perempuan</label><br>
+				  <label for="P">Perempuan</label>
           </div>
 
           <span class="txt1 p-b-11">
