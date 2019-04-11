@@ -99,6 +99,14 @@ input[type=submit]:hover {
   <form action="proses-input_peminjaman.php">
   <div class="row">
     <div class="col-25">
+      <label for="id_peminjaman">No Peminjaman</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="id_peminjaman" name="id_peminjaman">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
       <label for="id_anggota">No Anggota</label>
     </div>
     <div class="col-75">

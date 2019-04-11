@@ -1,154 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity | By Distinctive Themes">
+    <meta name="author" content="Distinctive Themes">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-<head>
+    <title>Koperasi Maju Jaya</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-  <title style color="black">Angsuran Koperasi Maju Jaya</title>
-  <style type="text/css">
-    {
-  box-sizing: border-box;
-}
+    <!-- Custom styles for this template -->   
+    <link href="assets/css/elusive-webfont.css" rel="stylesheet" >
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+ 	<link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  
+  </head>
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
+  <div id="preloader"></div>
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 14px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 50%;
-    margin-top: 0;
-  }
-}
-  </style>
-
-  <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Koperasi Maju Jaya</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Peminjaman</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Angsuran</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Kontak</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Daftar Anggota</a>
-          </li>
-        </ul>
-      </div>
+  	<div id="search-wrapper">
+  		<input id="search-box" placeholder="Search" />
+  	</div>  
+  
+  	<div id="navbar-main">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">				
+					<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
+					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
+						<i class="el-icon-lines"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="main-navigation">
+					<ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daftar.php">Daftar</a></li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="angsuran.html">Angsuran</a></li>
+								<li><a href="Data Peinjaman.html">Data Peminjaman</a></li>
+                <li><a href="dataangsuran.html">Data Angsuran</a></li>
+							</ul>
+						</li>
+							<li><a href="kontak.html">Kontak</a></li>
+						<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="login3.php">Admin</a></li>
+                <li><a href="login.html">Anggota</a></li>
+              </ul>
+            </li>	
+						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
     </div>
-  </nav>
+
+	<section class="textdivider single-post-header">
+		<div class="container">
+			<h1 class="fade-down">Angsuran</h1>
+			<hr class="mb60">
+		</div>
+	</section>
 
 
-  <!-- Masthead -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Angsuran Koperasi </h1>
-          <h2 class="text-uppercase text-white font-weight-bold">Maju Jaya</h2>
-          <hr class="divider my-4">
-          <section class="area">
-            <div align="center">
-        <table class="table table-bordered">
+	<!--  CONTENT WRAPPER -->
+	<div id="content-wrapper">		
+		
+		<section class="container page-section">
+			<div class="row white">
+				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+
+					<table class="table table-bordered">
   <div class="container">
-  <form action="proses-input_angsuran.php" method="POST">
+  <form action="proses-input_angsuran.php">
   <div class="row">
     <div class="col-25">
       <label for="id_angsuran">No.Angsuran</label>
     </div>
     <div class="col-75">
-      <input type="text" id="id_angsuran" name="id_angsuran" placeholder="No. Angsuran">
+      <input type="text" id="id_angsuran" name="id_angsuran" placeholder="">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="tanggal_angsuran">Tanggal Angsuran</label>
+      <label for="tanggal_angsuran">Tanggal Angusran</label>
     </div>
     <div class="col-75">
-      <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="Tanggal Angsuran">
+      <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -156,7 +110,7 @@ input[type=submit]:hover {
       <label for="id_anggota">No.Anggota</label>
     </div>
     <div class="col-75">
-      <input type="text" id="id_anggota" name="id_anggota" placeholder="No. Anggota">
+      <input type="text" id="id_anggota" name="id_anggota" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -164,7 +118,7 @@ input[type=submit]:hover {
       <label for="nama">Nama</label>
     </div>
     <div class="col-75">
-      <input type="text" id="nama" name="nama" placeholder="Nama Anggota">
+      <input type="text" id="nama" name="nama" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -172,7 +126,7 @@ input[type=submit]:hover {
       <label for="sisa_pinjaman">Sisa pinjaman</label>
     </div>
     <div class="col-75">
-      <input type="text" id="sisa_pinjaman" name="sisa_pinjaman" placeholder="Sisa Pinjaman">
+      <input type="text" id="sisa_pinjaman" name="sisa_pinjaman" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -180,15 +134,7 @@ input[type=submit]:hover {
       <label for="angsuran_bulanan">Angsuran Bulanan</label>
     </div>
     <div class="col-75">
-      <input type="text" id="angsuran_bulanan" name="angsuran_bulanan" placeholder="Angsuran Bulanan">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lama_keterlambatan">Lama Keterlambatan</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lama_keterlambatan" name="lama_keterlambatan" placeholder="">
+      <input type="text" id="angsuran_bulanan" name="angsuran_bulanan" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -196,12 +142,12 @@ input[type=submit]:hover {
       <label for="denda">Denda</label>
     </div>
     <div class="col-75">
-      <input type="text" id="denda" name="denda" placeholder="Denda">
+      <input type="text" id="denda" name="denda" placeholder="">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="total_bayar">Total Bayar</label>
+      <label for="total_bayar">total Bayar</label>
     </div>
     <div class="col-75">
       <input type="text" id="total_bayar" name="total_bayar" placeholder="">
@@ -215,10 +161,10 @@ input[type=submit]:hover {
       <input type="text" id="bayar_angsuran" name="bayar_angsuran" placeholder="">
     </div>
   </div>
-  
+
     <table align="center">
       <td align="left">
-        <button type="submit" value="tambah" name="tambah">SIMPAN</button>
+        <input type="submit" value="Tambah" name="tambah">
       </td>
       <td align="center">
         <button>RESET</button>
@@ -227,49 +173,50 @@ input[type=submit]:hover {
         <button>KEMBALI</button>
       </td>
     </table>
-</form>
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Kontak Kami</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Koperasi Maju Jaya</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+62322545344</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:kopmj@gmail.com">kopmj@gmail.com</a>
+</section>
         </div>
       </div>
     </div>
-  </section>
+  </header>
+<td>
+  <td>
+    <td>
+      <td>
+			</div><!-- row -->
+		</section>
+				
+		<section class="section-divider textdivider divider6 page-section">
+			<div class="container">
+				<h1 class="fade-down">Jl Soekarno Hatta no 62, Kota Malang</h1>
+				<hr>
+				<div class="fade-up">
+					<p>kopmj@gmail.com</p>
+					<p>+62 856 876 987</p>
+				</div>
+			</div>
+		</section>
+	
+	<!-- CONTENT WRAPPER -->
 
-  <!-- Footer -->
-  <footer class="bg-light py-5">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Koperasi Maju Jaya | MJ</div>
-    </div>
-  </footer>
+	<div id="footerwrap">
+		<div class="container">
+			<div class="btt-wrapper fade-down"><a class="btt-link smoothScroll" href="#headerwrap"><i class="el-icon-chevron-up"></i></a></div>
+			<ul id="footer-social" class="fade-down">
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-twitter"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-facebook"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-googleplus"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-flickr"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-youtube"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-rss"></i></a></li>
+			</ul>
+			<h4 class="fade-up">Koperasi Maju Jaya<a href=</a> - Copyright 2019</h4>
+		</div>
+	</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+	<script type="text/javascript" src="assets/js/init.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
-
-</body>
-
+  </body>
 </html>
