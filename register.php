@@ -1,219 +1,143 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Daftar Anggota</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity | By Distinctive Themes">
+    <meta name="author" content="Distinctive Themes">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+    <title>Koperasi Maju Jaya</title>
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-button:hover {
-	opacity: 0.8;
-	font-family: Arial, Helvetica, sans-serif;
-}
+    <!-- Custom styles for this template -->   
+    <link href="assets/css/elusive-webfont.css" rel="stylesheet" >
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+ 	<link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+  <div id="preloader"></div>
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+  	<div id="search-wrapper">
+  		<input id="search-box" placeholder="Search" />
+  	</div>  
+  
+<div id="navbar-main"> </div>
+	<div class="" align="center">
+	<section class="textdivider single-post-header"> </section>
+	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+				<form action="proses-input.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-32">
+						<p class="tulisan_login"><h3 align="center">Register</h3></p>
+					</span>
+					<span class="txt1 p-b-11">
+					Nama Anggota:
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Nama">
+						<span class="focus-input100"></span>
+					</div>
+          
+          <div>
+					<span class="txt1 p-b-11">
+						Jenis Kelamin:<br>
+					</span>
+				  <input type="radio" name="jenis_kelamin" id="L" value="L" >
+		 			<label for="L">Laki-Laki</label><br>
+				  <input type="radio" name="jenis_kelamin" id="P" value="P">
+					<label for="P">Perempuan</label><br>
+          </div>
 
-img.avatar {
-  width: 20%;
-  border-radius: 30%;
-}
+          <div>
+          <span class="txt1 p-b-11">
+					<br>Alamat
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
+						<input class="input100" type="text" name="alamat" placeholder="Alamat">
+						<span class="focus-input100"></span>
+          </div>
 
-.container {
-  padding: 16px;
-}
+					<div>
+          <span class="txt1 p-b-11">
+					Pekerjaan
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Pekerjaan is required">
+						<input class="input100" type="text" name="pekerjaan" placeholder="Pekerjaan">
+						<span class="focus-input100"></span>
+          </div>
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+					<div>
+          <span class="txt1 p-b-11">
+					<br>No. Handphone
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "No. Handphone is required">
+						<input class="input100" type="text" name="no_handphone" placeholder="No. Handphone">
+						<span class="focus-input100"></span>
+          </div>
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
-</head>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"> 
+							Login
+						</button>
+					</div>
+</div>
 
-<body>
-	<header>
-		
-	</header>
-	<form action="proses-input.php" method="POST">
-		<fieldset>
-			<p>
-				<label for="nama">Nama Anggota: </label>
-				<br><input type="text" name="nama" placeholder="Nama"/></br>
-			</p>
-			<p>
-				Jenis Kelamin:<br>
-				  <input type="radio" name="jenis_kelamin" id="L" value="L">
-				  <label for="L">Laki-Laki</label><br>
-				<input type="radio" name="jenis_kelamin" id="P" value="P">
-				<label for="P">Perempuan</label><br>
-			</p>
-			<p>
-				<label for="stok">Alamat: </label>
-				<br><input type="text" name="alamat" placeholder="Alamat"/></br>
-			</p>
-			<p>
-				<label for="nama">Pekerjaan : </label>
-				<br><input type="text" name="pekerjaan" placeholder="Pekerjaan"/></br>
-			</p>
-			<p>
-				<label for="nama">No Handphone: </label>
-				<br><input type="text" name="no_handphone" placeholder="No Handphone"/></br>
-			</p>
-			<p>
-				<input type="submit" value="Tambah" name="tambah">
-			</p>
-		</fieldset>
-	</form>
+					</div>
+
+				</form>
+			</div>
+	<!--  CONTENT WRAPPER -->
+	<div id="content-wrapper">
+<!-- row -->		
+</div>
+
+	</div>
+</div>
+<!-- CONTENT WRAPPER -->
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+<script type="text/javascript" src="assets/js/init.js"></script>
+	
+	
+
 </body>
 </html>
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registrasi Anggota</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-	opacity: 0.8;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 20%;
-  border-radius: 30%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<form action="proses-input.php" method="POST">
-<fieldset>
-  <p>
-				<label for="nama">Nama Anggota: </label>
-				<br><input type="text" name="nama" placeholder="Nama"/></br>
-			</p>
-			<p>
-				Jenis Kelamin:<br>
-				  <input type="radio" name="jenis_kelamin" id="L" value="L">
-				  <label for="L">Laki-Laki</label><br>
-				<input type="radio" name="jenis_kelamin" id="P" value="P">
-				<label for="P">Perempuan</label><br>
-			</p>
-			<p>
-				<label for="stok">Alamat: </label>
-				<br><input type="text" name="alamat" placeholder="Alamat"/></br>
-			</p>
-			<p>
-				<label for="nama">Pekerjaan : </label>
-				<br><input type="text" name="pekerjaan" placeholder="Pekerjaan"/></br>
-			</p>
-			<p>
-				<label for="nama">No Handphone: </label>
-				<br><input type="text" name="no_handphone" placeholder="No Handphone"/></br>
-			</p>
-        
-    <button type="submit">Register</button>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <a href="homeKop.html">
-    <button type="button" class="cancelbtn">Cancel</button>
-    </a>
-  </div>
-</fieldset>
-</form>
-
-</body>
-</html> -->
