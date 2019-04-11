@@ -9,7 +9,7 @@ if (!empty($username) && !empty($password)) {
    $result = mysqli_num_rows($sql);
    if ($result) {
       echo "Anda berhasil masuk!";
-      echo  " Klik <a href='homeKop.html'> disini </a> untuk melanjutkan";
+      echo  " Klik <a href='index2.html'> disini </a> untuk melanjutkan";
    }else {
       echo "username dan password salah";
    }
