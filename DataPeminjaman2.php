@@ -51,19 +51,19 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="peminjaman.html">Peminjaman</a></li>
-                <li><a href="angsuran.html">Angsuran</a></li>
+								<li><a href="angsuran.html">Angsuran</a></li>
 								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-                <li><a href="dataangsuran.html">Data Angsuran</a></li>
+								<li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
-						<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="login.html">Admin</a></li>
-                <li><a href="login3.php">Anggota</a></li>
-              </ul>
-            </li>	
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="login.html">Admin</a></li>
+									<li><a href="login3.php">Anggota</a></li>
+								</ul>
+							</li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -73,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Angsuran</h1>
+			<h1 class="fade-down">Data Peminjaman</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -85,103 +85,60 @@
 		<section class="container page-section">
 			<div class="row white">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+				 <p>
+		  <section class="main">
+			  <div class="container">
+  <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <form class="form-horizontal">
+  <table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
+    <thead>
+      <tr>
+        <th>No Peminjaman</th>
+        <th>No Anggota</th>
+        <th>Nama</th>
+        <th>Besar Pinjaman</th>
+        <th>Total Pinjaman</th>
+        <th>Keterangan</th>
+        <th>Tanggal Peminjaman</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <?php
+        require_once 'konek.php';
+        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman");
+        while($hasil  = mysqli_fetch_assoc($query)) {
+      ?>
+		
+      <tr>
+        <td><?php echo $hasil['id_peminjaman']?></td>
+        <td><?php echo $hasil['id_anggota']?></td>
+        <td><?php echo $hasil['nama']?></td>
+        <td><?php echo $hasil['besar_pinjaman']?></td>
+        <td><?php echo $hasil['total_pinjaman']?></td>
+        <td><?php echo $hasil['keterangan']?></td>
+        <td><?php echo $hasil['tanggal_meminjam']?></td>
+        <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+              <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+          </center>
+          </td>
+      </tr>
+      <?php }?>
+    </tbody>
+	  </div>
+	  </section>
+  </table>
 
-					<table class="table table-bordered">
-  <div class="container">
-  <form action="proses-input_angsuran.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="tanggal_angsuran">Tanggal Angusran</label>
-    </div>
-    <div class="col-75">
-      <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="">
-    </div>
+  <div class="row" align="center">
+  <!-- <input type="submit" value="Kembali"> -->
   </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="id_angsuran">No.Angsuran</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_angsuran" name="id_angsuran" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="id_anggota">No.Anggota</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_anggota" name="id_anggota" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="nama">Nama</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="nama" name="nama" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="sisa_pinjaman">Sisa pinjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="sisa_pinjaman" name="sisa_pinjaman" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="angsuran_bulanan">Angsuran Bulanan</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="angsuran_bulanan" name="angsuran_bulanan" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="denda">Denda</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="denda" name="denda" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="total_bayar">total Bayar</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="total_bayar" name="total_bayar" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="bayar_angsuran">Bayar Angsuran</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="bayar_angsuran" name="bayar_angsuran" placeholder="">
-    </div>
-  </div>
-
-    <table align="center">
-      <td align="left">
-        <input type="submit" value="Tambah" name="tambah">
-      </td>
-      <td align="center">
-        <3button>RESET</button>
-      </td>
-      <td align="right">
-        <button>KEMBALI</button>
-      </td>
-    </table>
+  </form>
+</div>
 </section>
         </div>
       </div>
     </div>
   </header>
-<td>
-  <td>
-    <td>
-      <td>
 			</div><!-- row -->
 		</section>
 				

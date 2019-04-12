@@ -60,8 +60,8 @@
 						<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="login.html">Admin</a></li>
-                <li><a href="login3.php">Anggota</a></li>
+								<li><a href="login.html">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
               </ul>
             </li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
@@ -73,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Angsuran</h1>
+			<h1 class="fade-down">Peminjaman</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -83,96 +83,74 @@
 	<div id="content-wrapper">		
 		
 		<section class="container page-section">
-			<div class="row white">
+			<div class="row black">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 
-					<table class="table table-bordered">
-  <div class="container">
-  <form action="proses-input_angsuran.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="tanggal_angsuran">Tanggal Angusran</label>
-    </div>
-    <div class="col-75">
-      <input type="date" id="tanggal_angsuran" name="tanggal_angsuran" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="id_angsuran">No.Angsuran</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_angsuran" name="id_angsuran" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="id_anggota">No.Anggota</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_anggota" name="id_anggota" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="nama">Nama</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="nama" name="nama" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="sisa_pinjaman">Sisa pinjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="sisa_pinjaman" name="sisa_pinjaman" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="angsuran_bulanan">Angsuran Bulanan</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="angsuran_bulanan" name="angsuran_bulanan" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="denda">Denda</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="denda" name="denda" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="total_bayar">total Bayar</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="total_bayar" name="total_bayar" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="bayar_angsuran">Bayar Angsuran</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="bayar_angsuran" name="bayar_angsuran" placeholder="">
-    </div>
-  </div>
+          <div class="container">
+					<div class="text-center"></div>
+					<form class="form-horizontal">
+          Tanggal Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal"></label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id=>
+				</div>
+      </div>
 
-    <table align="center">
-      <td align="left">
-        <input type="submit" value="Tambah" name="tambah">
-      </td>
-      <td align="center">
-        <3button>RESET</button>
-      </td>
-      <td align="right">
-        <button>KEMBALI</button>
-      </td>
-    </table>
+          No.Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noangsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noangsuran">
+				</div>
+      </div>
+
+           No.Anggota :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noanggota"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noanggota">
+				</div>
+      </div>
+
+      Nama :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="nama"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="nama">
+				</div>
+      </div>
+      
+      Besar Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="sisa"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="sisa">
+				</div>
+      </div>
+      
+      Total Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bulanan"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bulanan">
+				</div>
+      </div>
+      
+      Keterangan :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="denda"></label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="denda">
+				</div>
+      </div>				
+			<tr>
+        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
+        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+      <tr>
+		</form>		
+	</div>
 </section>
         </div>
       </div>
