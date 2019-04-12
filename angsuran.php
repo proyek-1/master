@@ -45,12 +45,12 @@
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="daftar.php">Daftar</a></li>
+                <li><a href="register.php">Daftar</a></li>
 						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="peminjaman.html">Peminjaman</a></li>
+								<li><a href="Peminjaman.php">Peminjaman</a></li>
                 <li><a href="angsuran.html">Angsuran</a></li>
 								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
                 <li><a href="dataangsuran.html">Data Angsuran</a></li>
@@ -85,7 +85,8 @@
 		<section class="container page-section">
 			<div class="row black">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-
+    </div>
+  </div>
           <div class="container">
 					<div class="text-center"></div>
 					<form class="form-horizontal">
@@ -167,6 +168,7 @@
       <tr>
 		</form>		
 	</div>
+>>>>>>> 4007841dc316f909abbe327af375373d3e039b08:angsuran.php
 </section>
         </div>
       </div>

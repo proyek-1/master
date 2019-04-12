@@ -22,7 +22,7 @@
     
     <script src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  
   </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -34,37 +34,36 @@
   	</div>  
   
   	<div id="navbar-main">
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">				
-						<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
-						<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
-							<i class="el-icon-lines"></i>
-						</button>
-					</div>
-					<div class="navbar-collapse collapse" id="main-navigation">
-						<ul class="nav navbar-nav">
-									<li><a href="index.html">Home</a></li>
-	
-									<li><a href="register.php">Daftar</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="Peminjaman2.php">Peminjaman</a></li>
-									<li><a href="angsuran.php">Angsuran</a></li>
-									<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-									<li><a href="Data Angsuran.php">Data Angsuran</a></li>
-								</ul>
-							</li>
-								<li><a href="kontak.html">Kontak</a></li>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">				
+					<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
+					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
+						<i class="el-icon-lines"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="main-navigation">
+					<ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daftar.php">Daftar</a></li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="peminjaman.html">Peminjaman</a></li>
+								<li><a href="angsuran.html">Angsuran</a></li>
+								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
+								<li><a href="dataangsuran.html">Data Angsuran</a></li>
+							</ul>
+						</li>
+							<li><a href="kontak.html">Kontak</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="login.html">Admin</a></li>
 									<li><a href="login3.php">Anggota</a></li>
 								</ul>
-							</li>
-
+							</li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -74,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">KONTAK KAMI</h1>
+			<h1 class="fade-down">Data Peminjaman</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -86,16 +85,60 @@
 		<section class="container page-section">
 			<div class="row white">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+				 <p>
+		  <section class="main">
+			  <div class="container">
+  <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <form class="form-horizontal">
+  <table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
+    <thead>
+      <tr>
+        <th>No Peminjaman</th>
+        <th>No Anggota</th>
+        <th>Nama</th>
+        <th>Besar Pinjaman</th>
+        <th>Total Pinjaman</th>
+        <th>Keterangan</th>
+        <th>Tanggal Peminjaman</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <?php
+        require_once 'konek.php';
+        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman");
+        while($hasil  = mysqli_fetch_assoc($query)) {
+      ?>
+		
+      <tr>
+        <td><?php echo $hasil['id_peminjaman']?></td>
+        <td><?php echo $hasil['id_anggota']?></td>
+        <td><?php echo $hasil['nama']?></td>
+        <td><?php echo $hasil['besar_pinjaman']?></td>
+        <td><?php echo $hasil['total_pinjaman']?></td>
+        <td><?php echo $hasil['keterangan']?></td>
+        <td><?php echo $hasil['tanggal_meminjam']?></td>
+        <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+              <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+          </center>
+          </td>
+      </tr>
+      <?php }?>
+    </tbody>
+	  </div>
+	  </section>
+  </table>
 
-					<div id="message"></div>
-					<form method="post" action="sendemail.php" id="contactform">
-						<input type="text" name="name" id="name" placeholder="Name" />
-						<input type="text" name="email" id="email" placeholder="Email" />
-						<input type="text" name="website" id="website" placeholder="Website" />
-						<textarea name="comments" id="comments" placeholder="Comments"></textarea>
-						<input class="btn btn-success" type="submit" name="submit" value="Submit" />
-					</form>
-				</div>
+  <div class="row" align="center">
+  <!-- <input type="submit" value="Kembali"> -->
+  </div>
+  </form>
+</div>
+</section>
+        </div>
+      </div>
+    </div>
+  </header>
 			</div><!-- row -->
 		</section>
 				
@@ -109,29 +152,7 @@
 				</div>
 			</div>
 		</section>
-			
-		<div class="text-center">
-			<div id="contact" class="container page-section">
-				<div class="row row white">
-					<div class="col-md-19 fade-up">
-						<h3>Kontak kami</h3>
-						<p><span class="icon icon-home"></span>Jl Soekarno Hatta no 62, Kota Malang<br/>
-							<span class="icon icon-phone"></span>+62 856 876 987<br/>
-							<span class="icon icon-mobile"></span>+32 734 56<br/>
-							<span class="icon icon-envelop"></span> <a href="#">kopmj@gmail.com</a> <br/>
-							<span class="icon icon-twitter"></span> <a href="#">@kopmj.com</a> <br/>
-							<span class="icon icon-facebook"></span> <a href="#">Koperasi Maju Jaya</a> <br/>
-						</p>
-					</div><!-- col -->
-					</div>
-					   </form><!-- form -->
-				
-				</div><!-- col -->
-
-			</div><!-- row -->		
-		</div>
-
-	</div>
+	
 	<!-- CONTENT WRAPPER -->
 
 	<div id="footerwrap">
