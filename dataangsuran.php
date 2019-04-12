@@ -50,20 +50,20 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="Peminjaman2.php">Peminjaman</a></li>
-                <li><a href="angsuran.html">Angsuran</a></li>
-								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-                <li><a href="dataangsuran.html">Data Angsuran</a></li>
+								<li><a href="peminjaman2.php">Peminjaman</a></li>
+								<li><a href="angsuran.html">Angsuran</a></li>
+								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
+								<li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
-						<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-								<li><a href="login.html">Admin</a></li>
-								<li><a href="login3.php">Anggota</a></li>
-              </ul>
-            </li>	
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="login.html">Admin</a></li>
+									<li><a href="login3.php">Anggota</a></li>
+								</ul>
+							</li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -73,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Peminjaman</h1>
+			<h1 class="fade-down">Data Angsuran</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -83,83 +83,56 @@
 	<div id="content-wrapper">		
 		
 		<section class="container page-section">
-			<div class="row black">
+			<div class="row white">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-
-          <div class="container">
-					<div class="text-center"></div>
-					<form class="form-horizontal">
-          Tanggal Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal"></label>
-				<div class="col-sm-10">
-					<input type="date" class="form-control" id=>
-				</div>
-      </div>
-
-          No.Peminjaman :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="nopeminjaman"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nopeminjaman">
-				</div>
-      </div>
-
-           No.Anggota :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="noanggota"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="noanggota">
-				</div>
-      </div>
-
-      Nama :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="nama"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nama">
-				</div>
-      </div>
-      
-      Besar Peminjaman :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="besar"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="besar">
-				</div>
-      </div>
-      
-      Total Peminjaman
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="total"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="total">
-				</div>
-      </div>
-      
-      Keterangan :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="keterangan"></label>
-				<div class="col-sm-10">
-					<textarea class="form-control" id="keterangan"></textarea>
-				</div>
-      </div>				
-			<tr>
-        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
-        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
-        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+				<p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
+    <thead>
       <tr>
-		</form>		
-	</div>
+        <th>ID Angsuran</th>
+        <th>Tanggal Angsuran</th>
+        <th>ID Anggota</th>
+        <th>Nama</th>
+        <th>Sisa Pinjaman</th>
+        <th>Angsuran Bulanan</th>
+        <th>Denda</th>
+        <th>Total Bayar</th>
+        <th>Bayar Angsuran</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <?php
+        require_once 'konek.php';
+        $query = mysqli_query($mysqli, "SELECT * FROM angsuran");
+        while($hasil  = mysqli_fetch_assoc($query)) {
+      ?>
+		
+      <tr>
+        <td><?php echo $hasil['id_angsuran']?></td>
+        <td><?php echo $hasil['tanggal_angsuran']?></td>
+        <td><?php echo $hasil['id_anggota']?></td>
+        <td><?php echo $hasil['nama']?></td>
+        <td><?php echo $hasil['sisa_pinjaman']?></td>
+        <td><?php echo $hasil['angsuran_bulanan']?></td>
+        <td><?php echo $hasil['denda']?></td>
+        <td><?php echo $hasil['total_bayar']?></td>
+        <td><?php echo $hasil['bayar_angsuran']?></td>
+        <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+              <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+          </center>
+          </td>
+      </tr>
+      <?php }?>
+    </tbody>
+	  </div>
+	  </section>
+  </table>
 </section>
         </div>
       </div>
     </div>
   </header>
-<td>
-  <td>
-    <td>
-      <td>
 			</div><!-- row -->
 		</section>
 				
