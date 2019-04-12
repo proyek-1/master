@@ -53,7 +53,7 @@
 								<li><a href="peminjaman2.php">Peminjaman</a></li>
 								<li><a href="angsuran.html">Angsuran</a></li>
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
-								<li><a href="dataangsuran.html">Data Angsuran</a></li>
+								<li><a href="dataangsuran.php">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
