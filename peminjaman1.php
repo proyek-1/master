@@ -51,19 +51,19 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="peminjaman.html">Peminjaman</a></li>
-								<li><a href="angsuran.html">Angsuran</a></li>
+                <li><a href="angsuran.html">Angsuran</a></li>
 								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-								<li><a href="dataangsuran.html">Data Angsuran</a></li>
+                <li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="login.html">Admin</a></li>
-									<li><a href="login3.php">Anggota</a></li>
-								</ul>
-							</li>	
+						<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+								<li><a href="login.html">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
+              </ul>
+            </li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -73,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Data Angsuran</h1>
+			<h1 class="fade-down">Peminjaman</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -83,9 +83,74 @@
 	<div id="content-wrapper">		
 		
 		<section class="container page-section">
-			<div class="row white">
+			<div class="row black">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 
+          <div class="container">
+					<div class="text-center"></div>
+					<form class="form-horizontal">
+          Tanggal Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal"></label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id=>
+				</div>
+      </div>
+
+          No.Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noangsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noangsuran">
+				</div>
+      </div>
+
+           No.Anggota :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noanggota"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noanggota">
+				</div>
+      </div>
+
+      Nama :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="nama"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="nama">
+				</div>
+      </div>
+      
+      Besar Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="sisa"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="sisa">
+				</div>
+      </div>
+      
+      Total Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bulanan"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bulanan">
+				</div>
+      </div>
+      
+      Keterangan :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="denda"></label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="denda">
+				</div>
+      </div>				
+			<tr>
+        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
+        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+      <tr>
+		</form>		
+	</div>
 </section>
         </div>
       </div>

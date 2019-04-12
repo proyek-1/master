@@ -73,7 +73,7 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Data Angsuran</h1>
+			<h1 class="fade-down">Data Peminjaman</h1>
 			<hr class="mb60">
 		</div>
 	</section>
@@ -85,16 +85,60 @@
 		<section class="container page-section">
 			<div class="row white">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+				 <p>
+		  <section class="main">
+			  <div class="container">
+  <p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
+  <form class="form-horizontal">
+  <table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
+    <thead>
+      <tr>
+        <th>No Peminjaman</th>
+        <th>No Anggota</th>
+        <th>Nama</th>
+        <th>Besar Pinjaman</th>
+        <th>Total Pinjaman</th>
+        <th>Keterangan</th>
+        <th>Tanggal Peminjaman</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <?php
+        require_once 'konek.php';
+        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman");
+        while($hasil  = mysqli_fetch_assoc($query)) {
+      ?>
+		
+      <tr>
+        <td><?php echo $hasil['id_peminjaman']?></td>
+        <td><?php echo $hasil['id_anggota']?></td>
+        <td><?php echo $hasil['nama']?></td>
+        <td><?php echo $hasil['besar_pinjaman']?></td>
+        <td><?php echo $hasil['total_pinjaman']?></td>
+        <td><?php echo $hasil['keterangan']?></td>
+        <td><?php echo $hasil['tanggal_meminjam']?></td>
+        <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+              <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+          </center>
+          </td>
+      </tr>
+      <?php }?>
+    </tbody>
+	  </div>
+	  </section>
+  </table>
 
+  <div class="row" align="center">
+  <!-- <input type="submit" value="Kembali"> -->
+  </div>
+  </form>
+</div>
 </section>
         </div>
       </div>
     </div>
   </header>
-<td>
-  <td>
-    <td>
-      <td>
 			</div><!-- row -->
 		</section>
 				

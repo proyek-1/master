@@ -1,166 +1,200 @@
-<html>
-<head>
-<title>Peminjaman</title>
-	<link rel="stylesheet" href="bootstrap.css">
-    <style type="text/css">
-<!--
-.style1 {color: #000000} 
-.col-75{
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity | By Distinctive Themes">
+    <meta name="author" content="Distinctive Themes">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+    <title>Koperasi Maju Jaya</title>
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-		body{
-			background-size:cover;
-			background-attachment: fixed;
-		}
-	.ul{
-	
-	background-color:#0000FF}
+    <!-- Custom styles for this template -->   
+    <link href="assets/css/elusive-webfont.css" rel="stylesheet" >
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+ 	<link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
   
-    </style>
-</head>
+  </head>
 
-<body background="gambar kota.jpg" style="width:100%">
-					<div class="nav nav-pills nav-justified">
-						<ul class="nav nav-pills nav-justified" >
-							<li><a href="">HOME</a></li>
-							<li><a href="">PEMINJAMAN</a></li>
-							<li><a href="">ANGSURAN</a></li>
-							<li><a href="">KONTAK</a></li>
-							<li><a href="">DAFTAR ANGGOTA</a></li>
-						</ul>
-					</div>
-<form action="proses-input_peminjaman.php" method="POST">
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-<div class="Logo">
-    <p><img src="logo koperasi.png" width="331" height="195"/></p>
-    <h1 class="style1" style="color:#FFFFFF" align="center">Peminjaman Koperasi Maju Jaya</h1>
-</div>
-<div class="container">
-  <form action="proses-input_peminjaman.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="id_peminjaman">No Peminjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_peminjaman" name="id_peminjaman">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="id_anggota">No Anggota</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="id_anggota" name="id_anggota">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="nama">Nama</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="nama" name=" nama">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="besar_pinjaman">Besar Pinjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="besar_pinjaman" name="besar_pinjaman">
-    </div>
-  </div>  <div class="row">
-    <div class="col-25">
-      <label for="total_pinjaman">Total Pinjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="total_pinjaman" name="total_pinjaman">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="keterangan">Keterangan</label>
-    </div>
-    <div class="col-75">
-      <textarea id="keterangan" name="keterangan" style="height:200px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="tanggal_meminjam">Tanggal Peminjaman</label>
-    </div>
-    <div class="col-75">
-      <input type="date" id="tanggal_meminjam" name="tanggal_meminjam">
-    </div>
-  </div>
+  <div id="preloader"></div>
 
-  <div class="row" align="center">
-    <input type="submit" value="Tambah" name="tambah">
-	<input type="submit" value="Reset">
-	<input type="submit" value="Kembali">
-  </div>
-  </form>
-</div>
+  	<div id="search-wrapper">
+  		<input id="search-box" placeholder="Search" />
+  	</div>  
+  
+  	<div id="navbar-main">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">				
+					<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
+					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
+						<i class="el-icon-lines"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="main-navigation">
+					<ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daftar.php">Daftar</a></li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="angsuran.html">Angsuran</a></li>
+								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
+                <li><a href="dataangsuran.html">Data Angsuran</a></li>
+							</ul>
+						</li>
+							<li><a href="kontak.html">Kontak</a></li>
+						<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+								<li><a href="login.html">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
+              </ul>
+            </li>	
+						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
 
-</form>
-</body>
+	<section class="textdivider single-post-header">
+		<div class="container">
+			<h1 class="fade-down">Peminjaman</h1>
+			<hr class="mb60">
+		</div>
+	</section>
+
+
+	<!--  CONTENT WRAPPER -->
+	<div id="content-wrapper">		
+		
+		<section class="container page-section">
+			<div class="row black">
+				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+
+          <div class="container">
+					<div class="text-center"></div>
+					<form class="form-horizontal">
+          Tanggal Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal"></label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id=>
+				</div>
+      </div>
+
+          No.Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noangsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noangsuran">
+				</div>
+      </div>
+
+           No.Anggota :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noanggota"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noanggota">
+				</div>
+      </div>
+
+      Nama :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="nama"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="nama">
+				</div>
+      </div>
+      
+      Besar Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="sisa"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="sisa">
+				</div>
+      </div>
+      
+      Total Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bulanan"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bulanan">
+				</div>
+      </div>
+      
+      Keterangan :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="keterangan"></label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="keterangan">
+				</div>
+      </div>				
+			<tr>
+        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
+        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+      <tr>
+		</form>		
+	</div>
+</section>
+        </div>
+      </div>
+    </div>
+  </header>
+<td>
+  <td>
+    <td>
+      <td>
+			</div><!-- row -->
+		</section>
+				
+		<section class="section-divider textdivider divider6 page-section">
+			<div class="container">
+				<h1 class="fade-down">Jl Soekarno Hatta no 62, Kota Malang</h1>
+				<hr>
+				<div class="fade-up">
+					<p>kopmj@gmail.com</p>
+					<p>+62 856 876 987</p>
+				</div>
+			</div>
+		</section>
+	
+	<!-- CONTENT WRAPPER -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="btt-wrapper fade-down"><a class="btt-link smoothScroll" href="#headerwrap"><i class="el-icon-chevron-up"></i></a></div>
+			<ul id="footer-social" class="fade-down">
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-twitter"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-facebook"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-googleplus"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-flickr"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-youtube"></i></a></li>
+				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-rss"></i></a></li>
+			</ul>
+			<h4 class="fade-up">Koperasi Maju Jaya<a href=</a> - Copyright 2019</h4>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+	<script type="text/javascript" src="assets/js/init.js"></script>
+
+  </body>
 </html>

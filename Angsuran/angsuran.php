@@ -45,14 +45,14 @@
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="daftar.php">Daftar</a></li>
+                <li><a href="register.php">Daftar</a></li>
 						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="peminjaman.html">Peminjaman</a></li>
+								<li><a href="Peminjaman.php">Peminjaman</a></li>
                 <li><a href="angsuran.html">Angsuran</a></li>
-								<li><a href="Data Peinjaman.html">Data Peminjaman</a></li>
+								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
                 <li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
@@ -60,8 +60,8 @@
 						<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="login3.php">Admin</a></li>
-                <li><a href="login.html">Anggota</a></li>
+								<li><a href="login.html">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
               </ul>
             </li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
@@ -83,9 +83,10 @@
 	<div id="content-wrapper">		
 		
 		<section class="container page-section">
-			<div class="row white">
+			<div class="row black">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 
+<<<<<<< HEAD:Angsuran/angsuran.php
 					<table class="table table-bordered">
   <div class="container">
   <form action="proses-input_angsuran.php">
@@ -177,6 +178,89 @@
         <button>KEMBALI</button>
       </td>
     </table>
+=======
+          <div class="container">
+					<div class="text-center"></div>
+					<form class="form-horizontal">
+          Tanggal Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal"></label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id=>
+				</div>
+      </div>
+
+          No.Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noangsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noangsuran">
+				</div>
+      </div>
+
+           No.Anggota :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="noanggota"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="noanggota">
+				</div>
+      </div>
+
+      Nama :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="nama"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="nama">
+				</div>
+      </div>
+      
+      Sisa Peminjaman :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="sisa"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="sisa">
+				</div>
+      </div>
+      
+      Angsuran Bulanan :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bulanan"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bulanan">
+				</div>
+      </div>
+      
+      Denda :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="denda"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="denda">
+				</div>
+      </div>
+      
+      Total Bayar :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="total"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="total">
+				</div>
+      </div>
+      
+      Bayar Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bayar"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bayar">
+				</div>
+			</div>				
+			<tr>
+        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
+        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
+      <tr>
+		</form>		
+	</div>
+>>>>>>> 4007841dc316f909abbe327af375373d3e039b08:angsuran.php
 </section>
         </div>
       </div>
