@@ -50,9 +50,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="Peminjaman.php">Peminjaman</a></li>
+								<li><a href="Peminjaman2.php">Peminjaman</a></li>
                 <li><a href="angsuran.html">Angsuran</a></li>
-								<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
+								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
                 <li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
@@ -168,7 +168,6 @@
       <tr>
 		</form>		
 	</div>
->>>>>>> 4007841dc316f909abbe327af375373d3e039b08:angsuran.php
 </section>
         </div>
       </div>
