@@ -185,14 +185,6 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lama_keterlambatan">Lama Keterlambatan</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lama_keterlambatan" name="lama_keterlambatan" placeholder="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
       <label for="denda">Denda</label>
     </div>
     <div class="col-75">

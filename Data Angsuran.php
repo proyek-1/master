@@ -121,7 +121,6 @@ input[type=submit]:hover {
         <th>Nama</th>
         <th>Sisa Pinjaman</th>
         <th>Angsuran Bulanan</th>
-        <th>Lama Keterlambatan</th>
         <th>Denda</th>
         <th>Total Bayar</th>
         <th>Bayar Angsuran</th>
@@ -142,7 +141,6 @@ input[type=submit]:hover {
         <td><?php echo $hasil['nama']?></td>
         <td><?php echo $hasil['sisa_pinjaman']?></td>
         <td><?php echo $hasil['angsuran_bulanan']?></td>
-        <td><?php echo $hasil['lama_keterlambatan']?></td>
         <td><?php echo $hasil['denda']?></td>
         <td><?php echo $hasil['total_bayar']?></td>
         <td><?php echo $hasil['bayar_angsuran']?></td>

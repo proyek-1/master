@@ -2,7 +2,7 @@
 include ("konek.php");
 
 if (isset($_POST['tambah'])){
-	$id_peminjaman = $_POST['mt_rand(10000, 19999)'];
+	$id_peminjaman = $_POST['id_peminjaman'];
 	$id_anggota = $_POST['id_anggota'];
 	$nama = $_POST['nama'];
 	$besar_pinjaman = $_POST['besar_pinjaman'];
