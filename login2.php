@@ -1,5 +1,5 @@
 <?php
-include 'konek.php';
+include 'konek2.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
