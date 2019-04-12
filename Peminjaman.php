@@ -139,9 +139,9 @@
       
       Keterangan :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="denda"></label>
+				<label class="control-label col-sm-2" for="keterangan"></label>
 				<div class="col-sm-10">
-					<textarea class="form-control" id="denda">
+					<textarea class="form-control" id="keterangan">
 				</div>
       </div>				
 			<tr>
