@@ -1,5 +1,28 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity | By Distinctive Themes">
+    <meta name="author" content="Distinctive Themes">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <title>Koperasi Maju Jaya</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->   
+    <link href="assets/css/elusive-webfont.css" rel="stylesheet" >
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+ 	<link href="assets/css/style.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  
+  </head>
 <title>Angsuran</title>
 	<link rel="stylesheet" href="bootstrap.css">
     <style type="text/css">
@@ -161,6 +184,11 @@ input[type=submit]:hover {
   </form>
 </div>
 
+
 </form>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+	<script type="text/javascript" src="assets/js/init.js"></script>
 </body>
 </html>

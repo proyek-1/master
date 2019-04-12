@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Peminjaman</title>
+<title>Angsuran</title>
 	<link rel="stylesheet" href="bootstrap.css">
     <style type="text/css">
 <!--
@@ -96,6 +96,18 @@ input[type=submit]:hover {
 </div>
 
 
+<?php 
+      require_once 'konek.php';
+      if (isset($_GET['kata_kunci'])) {
+        $kata_kunci = $_GET['kata_kunci'];
+        $query = mysqli_query($mysqli, "SELECT * FROM angsuran
+                    WHERE 
+                    id_anggota  LIKE '%$kata_kunci%'
+                    ");
+      }else{
+        $query = mysqli_query($mysqli,"SELECT * FROM angsuran where id_deleted=0");
+      }
+      ?>
       <p>
 		  <section class="main">
 			  <div class="container">
@@ -103,31 +115,37 @@ input[type=submit]:hover {
   <table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
     <thead>
       <tr>
-        <th>No Peminjaman</th>
-        <th>No Anggota</th>
+        <th>ID Angsuran</th>
+        <th>Tanggal Angsuran</th>
+        <th>ID Anggota</th>
         <th>Nama</th>
-        <th>Besar Pinjaman</th>
-        <th>Total Pinjaman</th>
-        <th>Keterangan</th>
-        <th>Tanggal Peminjaman</th>
+        <th>Sisa Pinjaman</th>
+        <th>Angsuran Bulanan</th>
+        <th>Lama Keterlambatan</th>
+        <th>Denda</th>
+        <th>Total Bayar</th>
+        <th>Bayar Angsuran</th>
       </tr>
     </thead>
     
     <tbody>
       <?php
         require_once 'konek.php';
-        $query = mysqli_query($mysqli, "SELECT * FROM peminjaman");
+        $query = mysqli_query($mysqli, "SELECT * FROM angsuran");
         while($hasil  = mysqli_fetch_assoc($query)) {
       ?>
 		
       <tr>
-        <td><?php echo $hasil['id_peminjaman']?></td>
+        <td><?php echo $hasil['id_angsuran']?></td>
+        <td><?php echo $hasil['tanggal_angsuran']?></td>
         <td><?php echo $hasil['id_anggota']?></td>
         <td><?php echo $hasil['nama']?></td>
-        <td><?php echo $hasil['besar_pinjaman']?></td>
-        <td><?php echo $hasil['total_pinjaman']?></td>
-        <td><?php echo $hasil['keterangan']?></td>
-        <td><?php echo $hasil['tanggal_meminjam']?></td>
+        <td><?php echo $hasil['sisa_pinjaman']?></td>
+        <td><?php echo $hasil['angsuran_bulanan']?></td>
+        <td><?php echo $hasil['lama_keterlambatan']?></td>
+        <td><?php echo $hasil['denda']?></td>
+        <td><?php echo $hasil['total_bayar']?></td>
+        <td><?php echo $hasil['bayar_angsuran']?></td>
         <td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
               <a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
           </center>
