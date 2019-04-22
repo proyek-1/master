@@ -115,7 +115,7 @@
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 						<button> 
-							<a href="index.html" style="color: black">Kembali</a>
+							<a href="index.php" style="color: black">Kembali</a>
 						</button>
 						</div>
 					</div>
