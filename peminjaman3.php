@@ -44,7 +44,7 @@
 				</div>
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
-                <li><a href="index2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="register2.php">Daftar</a></li>
 						
 						<li class="dropdown">
