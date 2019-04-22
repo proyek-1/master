@@ -132,7 +132,7 @@
 			$data = mysqli_query($connect, $query);
 			$total = mysqli_num_rows($data);
 			if($total==1){
-                $_SESSION['uname_name']=$uname;
+                $_SESSION = $uname;
 				header ('Location: index.php?status=sukses');
 			}else{
 				echo "login gagal";

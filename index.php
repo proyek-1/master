@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	ob_start();
+	echo "Welcome" .$_SESSION=$uname;
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,6 +54,7 @@
 				</div>
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
+
                 <li><a href="index.php">Home</a></li>
 
                 <li><a href="register.php">Daftar</a></li>
@@ -63,14 +69,9 @@
 							</ul>
 						</li>
 
-						<?php
-						session_start();
-
-						ob_start();
-						
-
 							<li><a href="kontak.html">Kontak</a></li>
 						<li class="dropdown">
+						
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="login2.php">Admin</a></li>
@@ -78,7 +79,7 @@
 
 							</ul>
 						</li>
-						?>
+						
 							
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
