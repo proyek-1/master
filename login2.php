@@ -64,7 +64,14 @@
 	<div class="" align="center">
 	<section class="textdivider single-post-header"> </section>
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<form action="login2.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+
+		<?php
+		ob_start();
+
+		include ("konek2.php");
+		?>
+
+				<form action="" method="POST" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-32">
 						<p class="tulisan_login"><h3 align="center">Silahkan Login</h3></p>
 					</span>
@@ -106,7 +113,6 @@
 						<button type="submit" name="submit" class="login100-form-btn"> 
 							Login
 						</button>
-						
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 						<button> 
@@ -115,6 +121,22 @@
 					</div>
 
 				</form>
+
+		<?php
+		if(isset($_POST['submit'])){
+			$uname = $_POST['username'];
+			$pwd = $_POST['password'];
+			$query = "SELECT * FROM pegawai WHERE username = '$uname' && password = '$pwd'";
+			$data = mysqli_query($connect, $query);
+			$total = mysqli_num_rows($data);
+			if($total==1){
+				header ('Location: index.php?status=sukses');
+			}else{
+				echo "login gagal";
+			}
+		}
+		?>
+
 			</div>
 	<!--  CONTENT WRAPPER -->
 	<div id="content-wrapper">
@@ -133,3 +155,5 @@
 
 </body>
 </html>
+
+

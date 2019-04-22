@@ -66,7 +66,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="login.html">Admin</a></li>
+								<li><a href="login2.php">Admin</a></li>
 								<li><a href="login3.php">Anggota</a></li>
 
 							</ul>
