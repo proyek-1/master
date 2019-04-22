@@ -66,6 +66,8 @@
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 
 		<?php
+		ob_start();
+
 		include ("konek2.php");
 		?>
 
@@ -128,7 +130,7 @@
 			$data = mysqli_query($connect, $query);
 			$total = mysqli_num_rows($data);
 			if($total==1){
-				header ('location:/index.php');
+				header ('Location: index.php?status=sukses');
 			}else{
 				echo "login gagal";
 			}
