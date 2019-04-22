@@ -50,7 +50,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="peminjaman3.php">Peminjaman</a></li>
+								<li><a href="peminjaman2.php">Peminjaman</a></li>
 								<li><a href="angsuran.php">Angsuran</a></li>
 
 								<li><a href="dataangsuran.php">Data Angsuran</a></li>

@@ -50,20 +50,14 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="Peminjaman2.php">Peminjaman</a></li>
-                <li><a href="angsuran.html">Angsuran</a></li>
+							<li><a href="peminjaman2.php">Peminjaman</a></li>
+								<li><a href="angsuran.php">Angsuran</a></li>
+
+								<li><a href="dataangsuran.php">Data Angsuran</a></li>
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
-                <li><a href="dataangsuran.html">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
-						<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-								<li><a href="login.html">Admin</a></li>
-								<li><a href="login3.php">Anggota</a></li>
-              </ul>
-            </li>	
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
