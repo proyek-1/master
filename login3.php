@@ -66,6 +66,8 @@
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 
 		<?php
+		session_start();
+
 		ob_start();
 
 		include ("konek2.php");

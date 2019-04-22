@@ -62,6 +62,13 @@
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 							</ul>
 						</li>
+
+						<?php
+						session_start();
+
+						ob_start();
+						
+
 							<li><a href="kontak.html">Kontak</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
@@ -71,6 +78,7 @@
 
 							</ul>
 						</li>
+						?>
 							
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
