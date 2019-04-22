@@ -55,11 +55,11 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="peminjaman2.php">Peminjaman</a></li>
+								<li><a href="peminjaman3.php">Peminjaman</a></li>
 								<li><a href="angsuran.php">Angsuran</a></li>
 
-								<li><a href="Data Angsuran.php">Data Peminjaman</a></li>
-								<li><a href="DataPeminjaman.php">Data Angsuran</a></li>
+								<li><a href="dataangsuran.php">Data Peminjaman</a></li>
+								<li><a href="DataPeminjaman2.php">Data Angsuran</a></li>
 							</ul>
 						</li>
 							<li><a href="kontak.html">Kontak</a></li>
