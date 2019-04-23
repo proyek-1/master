@@ -81,87 +81,102 @@
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
     </div>
   </div>
-          <div class="container">
-					<div class="text-center"></div>
-					<form class="form-horizontal"action="proses-input_angsuran.php" method="POST">
-          Tanggal Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="date" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran">
-				</div>
-      </div>
+          
+	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+				<form action="proses-input_angsuran.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-32">
+					</span>
+					<span class="txt1 p-b-11">
+					Tanggal Angsuran
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Tanggal is required">
+						<input class="input100" type="date" name="tanggal_angsuran" placeholder="Nama">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<span class="txt1 p-b-11">
+					No. Angsuran
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "ID Angsuran is required">
+						<input class="input100" type="text" name="id_angsuran" placeholder="No. Angsuran">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<span class="txt1 p-b-11">
+					No. Anggota
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "No. Anggota is required">
+						<input class="input100" type="text" name="id_anggota" placeholder="No. Anggota">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<span class="txt1 p-b-11">
+					Nama
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Nama is required">
+						<input class="input100" type="text" name="nama" placeholder="Nama">
+						<span class="focus-input100"></span>
+					</div>
 
-          No.Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="id_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="id_angsuran" name="id_angsuran">
-				</div>
-      </div>
+					<span class="txt1 p-b-11">
+					Sisa Peminjaman
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Sisa Peminjaman is required">
+						<input class="input100" type="text" name="sisa_peminjaman" placeholder="Sisa Peminjaman">
+						<span class="focus-input100"></span>
+					</div>
 
-           No.Anggota :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="id_anggota"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="id_anggota" name="id_anggota">
-				</div>
-      </div>
+					<span class="txt1 p-b-11">
+					Angsuran Bulanan
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Tanggal is required">
+						<input class="input100" type="text" name="angsuran_bulanan" placeholder="Nama">
+						<span class="focus-input100"></span>
+					</div>
 
-      Nama :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="nama"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nama" name="nama">
-				</div>
-      </div>
-      
-      Sisa Peminjaman :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="sisa_pinjaman"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="sisa_pinjaman" name="sisa_pinjaman">
-				</div>
-      </div>
-      
-      Angsuran Bulanan :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="angsuran_bulanan"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="angsuran_bulanan" name="angsuran_bulanan">
-				</div>
-      </div>
-      
-      Denda :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="denda"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="denda" name="denda">
-				</div>
-      </div>
-      
-      Total Bayar :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="total_bayar"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="total_bayar" name="total_bayar">
-				</div>
-      </div>
-      
-      Bayar Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="bayar_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="bayar_angsuran" name="bayar_angsuran">
-				</div>
-			</div>				
-			<tr>
-        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
-        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
-        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
-      <tr>
-		</form>		
-	</div>
+					<span class="txt1 p-b-11">
+					Denda
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Denda is required">
+						<input class="input100" type="text" name="denda" placeholder="Denda">
+						<span class="focus-input100"></span>
+					</div>
+
+					<span class="txt1 p-b-11">
+					Total Bayar
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Total Bayar is required">
+						<input class="input100" type="text" name="total_bayar" placeholder="Total Bayar">
+						<span class="focus-input100"></span>
+					</div>
+
+					<span class="txt1 p-b-11">
+					Bayar Angsuran
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Bayar Angsuran is required">
+						<input class="input100" type="text" name="bayar_angsuran" placeholder="Bayar Angsuran">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+					  <button type="submit" name="tambah" value="tambah" class="login100-form-btn"> 
+							Register
+						</button>
+
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+						<button> 
+							<a href="index.php" style="color: black">Kembali</a>
+						</button>
+						</div>
+					</div>
+
+					</div>
+
+				</form>
+			</div>
+
+
 </section>
         </div>
       </div>

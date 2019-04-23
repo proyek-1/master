@@ -79,10 +79,9 @@
 		<section class="container page-section">
 			<div class="row black">
 				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-
           <div class="container">
 					<div class="text-center"></div>
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="proses-input_peminjaman.php" method="POST">
           Tanggal Angsuran :
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal"></label>
