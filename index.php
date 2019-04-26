@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	ob_start();
-	echo "Welcome" .$_SESSION['username'];
+	// echo "Welcome" .$_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
