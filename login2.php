@@ -22,7 +22,7 @@
     
     <script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -65,15 +65,15 @@
 	<section class="textdivider single-post-header"> </section>
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 
-        <?php
-        session_start();
+    <?php
+    session_start();
 
 		ob_start();
 
 		include ("konek2.php");
 		?>
 
-				<form action="" method="POST" class="login100-form validate-form flex-sb flex-w">
+				<form action="" id="formContoh" method="POST" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-32">
 						<p class="tulisan_login"><h3 align="center">Silahkan Login</h3></p>
 					</span>
@@ -82,7 +82,7 @@
 						Username
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" >
+						<input class="input100" type="text" name="username" id="username">
 						<span class="focus-input100"></span>
 					</div>
 					
@@ -132,7 +132,7 @@
 			$data = mysqli_query($connect, $query);
 			$total = mysqli_num_rows($data);
 			if($total==1){
-                $_SESSION = $uname;
+                $_SESSION['username'] = $uname;
 				header ('Location: index.php?status=sukses');
 			}else{
 				echo "login gagal";
@@ -153,8 +153,6 @@
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
 	<script type="text/javascript" src="assets/js/init.js"></script>
-	
-	
 
 </body>
 </html>

@@ -47,7 +47,7 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">				
-					<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
+					<a class="navbar-brand" href="index2.php"><h1>Koperasi Maju Jaya</h1></a>
 					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
 						<i class="el-icon-lines"></i>
 					</button>
@@ -55,7 +55,7 @@
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
 
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
 
                 <li><a href="register.php">Daftar</a></li>
 						<li class="dropdown">
@@ -72,9 +72,11 @@
 							<li><a href="kontak.html">Kontak</a></li>
 						<li class="dropdown">
 						
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['username'] ?><b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="logout.php">Logout</a></li>
+								<li><a href="login2.php">Admin</a></li>
+								<li><a href="login3.php">Anggota</a></li>
+
 							</ul>
 						</li>
 						
@@ -173,7 +175,7 @@
 				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-youtube"></i></a></li>
 				<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-rss"></i></a></li>
 			</ul>
-			<h4 class="fade-up">Koperasi Maju Jaya<a></a> - Copyright 2019</h4>
+			<h4 class="fade-up">Koperasi Maju Jaya<a></a>Copyright 2019</h4>
 		</div>
 	</div>
 
