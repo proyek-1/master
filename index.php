@@ -71,7 +71,6 @@
 
 							<li><a href="kontak.html">Kontak</a></li>
 						<li class="dropdown">
-						
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['username'] ?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="logout.php">Logout</a></li>

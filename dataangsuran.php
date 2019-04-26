@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	ob_start();
+	// echo "Welcome" .$_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,7 +62,8 @@
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 							</ul>
 						</li>
-							<li><a href="kontak.html">Kontak</a></li>
+							<li><a href="kontak.php">Kontak</a></li>
+							
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
