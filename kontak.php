@@ -37,30 +37,28 @@
 			<div class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
 					<div class="navbar-header">				
-						<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
+						<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
 						<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
 							<i class="el-icon-lines"></i>
 						</button>
 					</div>
 					<div class="navbar-collapse collapse" id="main-navigation">
 						<ul class="nav navbar-nav">
-									<li><a href="index2.html">Home</a></li>
+									<li><a href="index.php">Home</a></li>
 	
 									<li><a href="register.php">Daftar</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="Peminjaman.php">Peminjaman</a></li>
-									<li><a href="angsuran.php">Angsuran</a></li>
-									<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-									<li><a href="Data Angsuran.php">Data Angsuran</a></li>
+									<li><a href="peminjaman3.php">Peminjaman</a></li>
+								<li><a href="angsuran.php">Angsuran</a></li>
+
+								<li><a href="dataangsuran.php">Data Angsuran</a></li>
+								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 								</ul>
 							</li>
-								<li><a href="kontak2.html">Kontak</a></li>
-							<li>
-								<a href="index.html">Logout</b></a>
-							</li>
-
+								<li><a href="kontak.html">Kontak</a></li>
+							<li class="dropdown">
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -105,19 +103,6 @@
 				</div>
 			</div>
 		</section>
-
-		<div id="contact" class="container page-section">
-			<div class="row row white">
-				<div class="col-md-4 fade-up">
-					<h3>Kontak kami</h3>
-					<p><span class="icon icon-home"></span>Jl Soekarno Hatta no 62, Kota Malang<br/>
-						<span class="icon icon-phone"></span>+62 856 876 987<br/>
-						<span class="icon icon-mobile"></span>+32 734 56<br/>
-						<span class="icon icon-envelop"></span> <a href="#">kopmj@gmail.com</a> <br/>
-						<span class="icon icon-twitter"></span> <a href="#">@kopmj.com</a> <br/>
-						<span class="icon icon-facebook"></span> <a href="#">Koperasi Maju Jaya</a> <br/>
-					</p>
-				</div><!-- col -->
 			
 		<div class="text-center">
 			<div id="contact" class="container page-section">
