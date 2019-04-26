@@ -37,27 +37,27 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">				
-					<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
+					<a class="navbar-brand" href="index2.php"><h1>Koperasi Maju Jaya</h1></a>
 					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
 						<i class="el-icon-lines"></i>
 					</button>
 				</div>
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
                 <li><a href="register2.php">Daftar</a></li>
 						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="Peminjaman3.php">Peminjaman</a></li>
+								<li><a href="Peminjaman2.php">Peminjaman</a></li>
 								<li><a href="angsuran.php">Angsuran</a></li>
 								
 								<li><a href="dataangsuran.php">Data Angsuran</a></li>
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 							</ul>
 						</li>
-							<li><a href="kontak2.html">Kontak</a></li>
+							<li><a href="kontak.php">Kontak</a></li>
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>

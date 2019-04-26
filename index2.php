@@ -68,7 +68,7 @@
 							</ul>
 						</li>
 
-							<li><a href="kontak.html">Kontak</a></li>
+							<li><a href="kontak.php">Kontak</a></li>
 						<li class="dropdown">
 						
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
