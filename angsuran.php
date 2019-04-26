@@ -83,28 +83,28 @@
   </div>
           <div class="container">
 					<div class="text-center"></div>
-					<form class="form-horizontal">
+					<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
           Tanggal Angsuran :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal"></label>
+				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
 				<div class="col-sm-10">
-					<input type="date" class="form-control" id=>
+					<input type="date" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran">
 				</div>
       </div>
 
           No.Angsuran :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="noangsuran"></label>
+				<label class="control-label col-sm-2" for="id_angsuran"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="noangsuran">
+					<input type="text" class="form-control" id="id_angsuran" name="id_angsuran">
 				</div>
       </div>
 
            No.Anggota :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="noanggota"></label>
+				<label class="control-label col-sm-2" for="id_anggota"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="noanggota">
+					<input type="text" class="form-control" id="id_anggota" name="id_anggota">
 				</div>
       </div>
 
@@ -112,23 +112,23 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nama"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nama">
+					<input type="text" class="form-control" id="nama" name="nama">
 				</div>
       </div>
       
       Sisa Peminjaman :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="sisa"></label>
+				<label class="control-label col-sm-2" for="sisa_pinjaman"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="sisa">
+					<input type="text" class="form-control" id="sisa_pinjaman" name="sisa_pinjaman">
 				</div>
       </div>
       
       Angsuran Bulanan :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="bulanan"></label>
+				<label class="control-label col-sm-2" for="angsuran_bulanan"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="bulanan">
+					<input type="text" class="form-control" id="angsuran_bulanan" name="angsuran_bulanan">
 				</div>
       </div>
       
@@ -136,23 +136,23 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="denda"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="denda">
+					<input type="text" class="form-control" id="denda" name="denda">
 				</div>
       </div>
       
       Total Bayar :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="total"></label>
+				<label class="control-label col-sm-2" for="total_bayar"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="total">
+					<input type="text" class="form-control" id="total_bayar" name="total_bayar">
 				</div>
       </div>
       
       Bayar Angsuran :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="bayar"></label>
+				<label class="control-label col-sm-2" for="bayar_angsuran"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="bayar">
+					<input type="text" class="form-control" id="bayar_angsuran" name="bayar_angsuran">
 				</div>
 			</div>				
 			<tr>

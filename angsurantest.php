@@ -37,27 +37,27 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">				
-					<a class="navbar-brand" href="index2.php"><h1>Koperasi Maju Jaya</h1></a>
+					<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
 					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
 						<i class="el-icon-lines"></i>
 					</button>
 				</div>
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
-                <li><a href="index2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="register.php">Daftar</a></li>
 						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="peminjaman2.php">Peminjaman</a></li>
+							<li><a href="peminjaman2.php">Peminjaman</a></li>
 								<li><a href="angsuran.php">Angsuran</a></li>
 
 								<li><a href="dataangsuran.php">Data Angsuran</a></li>
 								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 							</ul>
 						</li>
-							<li><a href="kontak.php">Kontak</a></li>
+							<li><a href="kontak.html">Kontak</a></li>
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -67,85 +67,70 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">Peminjaman</h1>
+			<h1 class="fade-down">Angsuran</h1>
 			<hr class="mb60">
 		</div>
 	</section>
 
 
 	<!--  CONTENT WRAPPER -->
-	<div id="content-wrapper">		
-		
-		<section class="container page-section">
-			<div class="row black">
-				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-          <div class="container">
-					<div class="text-center"></div>
-					<form class="form-horizontal" action="proses-input_peminjaman.php" method="POST">
+          
+	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+	<form method="POST" action="proses-input_angsuran.php">
+  <table cellpadding="8">
+  <tr>
+    <td>No Angsuran</td>
+    <td><input type="text" name="id_angsuran"></td>
+  </tr>
 
-          No.Peminjaman :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="id_peminjaman"></label>
-				<div class="col-sm-10">
-					<input type="text" id="id_peminjaman" name="id_peminjaman">
-				</div>
-      </div>
+  <tr>
+    <td>Tanggal Angsuran</td>
+    <td><input type="date" name="tanggal_angsuran"></td>
+  </tr>
 
-           No.Anggota :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="id_anggota"></label>
-				<div class="col-sm-10">
-					<input type="text" id="id_anggota" nama="id_anggota">
-				</div>
-      </div>
+  <tr>
+    <td>No Anggota</td>
+    <td><input type="text" name="id_angsuran"></td>
+  </tr>
 
-      Nama :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="nama"></label>
-				<div class="col-sm-10">
-					<input type="text" id="nama" name="nama">
-				</div>
-      </div>
-      
-      Besar Peminjaman :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="besar_pinjaman"></label>
-				<div class="col-sm-10">
-					<input type="text" id="besar_pinjaman" name="besar_pinjaman">
-				</div>
-      </div>
-      
-      Total Peminjaman
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="total_pinjaman"></label>
-				<div class="col-sm-10">
-					<input type="text" id="total_pinjaman" name="total_pinjaman">
-				</div>
-      </div>
-      
-      Keterangan :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="keterangan"></label>
-				<div class="col-sm-10">
-					<textarea id="keterangan" name="keterangan"></textarea>
-				</div>
+  <tr>
+    <td>Nama</td>
+    <td><input type="text" name="nama"></td>
+  </tr>
 
-				Tanggal Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal_meminjam"></label>
-				<div class="col-sm-10">
-					<input type="date" id="tanggal_meminjam" name="tanggal_meminjam">
-				</div>
-      </div>
-			
-      </div>				
-			<tr>
-        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
-        <input type="submit" class="btn btn-success" name="RESET" value="reset" />
-        <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
-      <tr>
-		</form>		
-	</div>
+  <tr>
+    <td>Sisa Pinjaman</td>
+    <td><input type="text" name="sisa_pinjaman"></td>
+  </tr>
+
+	<tr>
+    <td>Angsuran Bulanan</td>
+    <td><input type="text" name="angsuran_bulanan"></td>
+  </tr>
+
+	<tr>
+    <td>Denda</td>
+    <td><input type="text" name="denda"></td>
+  </tr>
+
+	<tr>
+    <td>Total Bayar</td>
+    <td><input type="text" name="total_bayar"></td>
+  </tr>
+
+	<tr>
+    <td>Bayar Angsuran</td>
+    <td><input type="text" name="bayar_angsuran"></td>
+  </tr>
+  </table>
+  
+
+  <input type="submit" value="tambah">
+  <a href="daftar.php"><input type="button" value="Batal"></a>
+  </form>
+			</div>
+
+
 </section>
         </div>
       </div>
