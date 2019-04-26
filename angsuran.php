@@ -83,7 +83,7 @@
   </div>
           <div class="container">
 					<div class="text-center"></div>
-					<form class="form-horizontal"action="proses-input_angsuran.php" method="POST">
+					<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
           Tanggal Angsuran :
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>

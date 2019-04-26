@@ -82,27 +82,20 @@
           <div class="container">
 					<div class="text-center"></div>
 					<form class="form-horizontal" action="proses-input_peminjaman.php" method="POST">
-          Tanggal Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal"></label>
-				<div class="col-sm-10">
-					<input type="date" class="form-control" id=>
-				</div>
-      </div>
 
           No.Peminjaman :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="nopeminjaman"></label>
+				<label class="control-label col-sm-2" for="id_peminjaman"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nopeminjaman">
+					<input type="text" id="id_peminjaman" name="id_peminjaman">
 				</div>
       </div>
 
            No.Anggota :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="noanggota"></label>
+				<label class="control-label col-sm-2" for="id_anggota"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="noanggota">
+					<input type="text" id="id_anggota" nama="id_anggota">
 				</div>
       </div>
 
@@ -110,23 +103,23 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nama"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nama">
+					<input type="text" id="nama" name="nama">
 				</div>
       </div>
       
       Besar Peminjaman :
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="besar"></label>
+				<label class="control-label col-sm-2" for="besar_pinjaman"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="besar">
+					<input type="text" id="besar_pinjaman" name="besar_pinjaman">
 				</div>
       </div>
       
       Total Peminjaman
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="total"></label>
+				<label class="control-label col-sm-2" for="total_pinjaman"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="total">
+					<input type="text" id="total_pinjaman" name="total_pinjaman">
 				</div>
       </div>
       
@@ -134,8 +127,17 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="keterangan"></label>
 				<div class="col-sm-10">
-					<textarea class="form-control" id="keterangan"></textarea>
+					<textarea id="keterangan" name="keterangan"></textarea>
 				</div>
+
+				Tanggal Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal_meminjam"></label>
+				<div class="col-sm-10">
+					<input type="date" id="tanggal_meminjam" name="tanggal_meminjam">
+				</div>
+      </div>
+			
       </div>				
 			<tr>
         <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />

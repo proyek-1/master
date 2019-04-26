@@ -74,106 +74,60 @@
 
 
 	<!--  CONTENT WRAPPER -->
-	<div id="content-wrapper">		
-		
-		<section class="container page-section">
-			<div class="row black">
-				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-    </div>
-  </div>
           
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-				<form action="proses-input_angsuran.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-					<span class="login100-form-title p-b-32">
-					</span>
-					<span class="txt1 p-b-11">
-					Tanggal Angsuran
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Tanggal is required">
-						<input class="input100" type="date" name="tanggal_angsuran" placeholder="Nama">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<span class="txt1 p-b-11">
-					No. Angsuran
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "ID Angsuran is required">
-						<input class="input100" type="text" name="id_angsuran" placeholder="No. Angsuran">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<span class="txt1 p-b-11">
-					No. Anggota
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "No. Anggota is required">
-						<input class="input100" type="text" name="id_anggota" placeholder="No. Anggota">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<span class="txt1 p-b-11">
-					Nama
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Nama is required">
-						<input class="input100" type="text" name="nama" placeholder="Nama">
-						<span class="focus-input100"></span>
-					</div>
+	<form method="POST" action="proses-input_angsuran.php">
+  <table cellpadding="8">
+  <tr>
+    <td>No Angsuran</td>
+    <td><input type="text" name="id_angsuran"></td>
+  </tr>
 
-					<span class="txt1 p-b-11">
-					Sisa Peminjaman
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Sisa Peminjaman is required">
-						<input class="input100" type="text" name="sisa_peminjaman" placeholder="Sisa Peminjaman">
-						<span class="focus-input100"></span>
-					</div>
+  <tr>
+    <td>Tanggal Angsuran</td>
+    <td><input type="date" name="tanggal_angsuran"></td>
+  </tr>
 
-					<span class="txt1 p-b-11">
-					Angsuran Bulanan
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Tanggal is required">
-						<input class="input100" type="text" name="angsuran_bulanan" placeholder="Nama">
-						<span class="focus-input100"></span>
-					</div>
+  <tr>
+    <td>No Anggota</td>
+    <td><input type="text" name="id_angsuran"></td>
+  </tr>
 
-					<span class="txt1 p-b-11">
-					Denda
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Denda is required">
-						<input class="input100" type="text" name="denda" placeholder="Denda">
-						<span class="focus-input100"></span>
-					</div>
+  <tr>
+    <td>Nama</td>
+    <td><input type="text" name="nama"></td>
+  </tr>
 
-					<span class="txt1 p-b-11">
-					Total Bayar
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Total Bayar is required">
-						<input class="input100" type="text" name="total_bayar" placeholder="Total Bayar">
-						<span class="focus-input100"></span>
-					</div>
+  <tr>
+    <td>Sisa Pinjaman</td>
+    <td><input type="text" name="sisa_pinjaman"></td>
+  </tr>
 
-					<span class="txt1 p-b-11">
-					Bayar Angsuran
-					</span>
-					<div class="wrap-input100 validate-input m-b-36" data-validate = "Bayar Angsuran is required">
-						<input class="input100" type="text" name="bayar_angsuran" placeholder="Bayar Angsuran">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-					  <button type="submit" name="tambah" value="tambah" class="login100-form-btn"> 
-							Register
-						</button>
+	<tr>
+    <td>Angsuran Bulanan</td>
+    <td><input type="text" name="angsuran_bulanan"></td>
+  </tr>
 
-						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	<tr>
+    <td>Denda</td>
+    <td><input type="text" name="denda"></td>
+  </tr>
 
-						<button> 
-							<a href="index.php" style="color: black">Kembali</a>
-						</button>
-						</div>
-					</div>
+	<tr>
+    <td>Total Bayar</td>
+    <td><input type="text" name="total_bayar"></td>
+  </tr>
 
-					</div>
+	<tr>
+    <td>Bayar Angsuran</td>
+    <td><input type="text" name="bayar_angsuran"></td>
+  </tr>
+  </table>
+  
 
-				</form>
+  <input type="submit" value="tambah">
+  <a href="daftar.php"><input type="button" value="Batal"></a>
+  </form>
 			</div>
 
 
