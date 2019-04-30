@@ -1,10 +1,5 @@
 <?php
    session_start();
    session_destroy();
+   header('location:index2.php');
 ?>
-
-<div align="center">
-  <h2>Anda telah berhasil logout..</h2>
-  Silahkan klik <a href="login2.php">disini</a> untuk login kembali<br>
-  Silahkan klik <a href="index2.php">disini</a> untuk kembali home
-</div>
