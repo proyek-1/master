@@ -89,6 +89,11 @@
           <div class="container">
 					<div class="text-center"></div>
 					<form class="form-horizontal">
+
+					<?php
+						$id = mt_rand(10000, 20000);
+					?>
+
           Tanggal Angsuran :
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal"></label>
@@ -101,7 +106,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nopeminjaman"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nopeminjaman">
+					<input type="text" class="form-control" id="nopeminjaman" value="<?= $id?>" disabled>
 				</div>
       </div>
 

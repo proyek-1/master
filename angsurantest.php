@@ -78,9 +78,12 @@
 	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 	<form method="POST" action="proses-input_angsuran.php">
   <table cellpadding="8">
+	<?php
+	$id = mt_rand(10000, 20000);
+	?>
   <tr>
     <td>No Angsuran</td>
-    <td><input type="text" name="id_angsuran"></td>
+    <td><input type="text" name="id_angsuran" value="<?= $id?>" disabled></td>
   </tr>
 
   <tr>
