@@ -82,7 +82,7 @@
 						Username
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" >
+						<input class="input100" type="text" name="nama" >
 						<span class="focus-input100"></span>
 					</div>
 					
@@ -126,9 +126,9 @@
 
 		<?php
 		if(isset($_POST['submit'])){
-			$uname = $_POST['username'];
+			$nama = $_POST['nama'];
 			$pwd = $_POST['password'];
-			$query = "SELECT * FROM pegawai WHERE username = '$uname' && password = '$pwd'";
+			$query = "SELECT * FROM anggota WHERE nama = '$nama' && password = '$pwd'";
 			$data = mysqli_query($connect, $query);
 			$total = mysqli_num_rows($data);
 			if($total==1){
