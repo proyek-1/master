@@ -1,5 +1,6 @@
 <?php
    session_start();
    session_destroy();
-   header('location:index.php');
+   echo "<script>alert('Anda telah keluar')</script>";
+	echo "<script>location='index.php'</script>";
 ?>
