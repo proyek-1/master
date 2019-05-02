@@ -1,3 +1,11 @@
+<?php
+error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
+	session_start();
+	ob_start();
+	
+
+	// echo "Welcome" .$_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
