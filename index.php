@@ -3,7 +3,12 @@
 		session_start();
 		ob_start();
 		
-
+	// if(isset($_SESSION['pegawai'])) {
+	// 	echo "<script>alert('Anda harus login')</script>";
+	// 	echo "<script>location='login2.php'</script>";
+	// 	header('location:login2.php');
+	// 	exit();
+	// }
 		// echo "Welcome" .$_SESSION['username'];
 	?>
 	<!DOCTYPE html>

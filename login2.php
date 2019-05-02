@@ -146,6 +146,15 @@
 			}
 			?>
 
+			<?php
+			// if(!isset($_SESSION['pegawai'])) {
+			// 	echo "<script>alert('Anda harus login')</script>";
+			// 	echo "<script>location='index.php'</script>";
+			// 	header('location:login2.php');
+			// 	exit();
+			// }
+			?>
+
 				</div>
 		<!--  CONTENT WRAPPER -->
 		<div id="content-wrapper">
