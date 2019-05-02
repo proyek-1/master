@@ -111,7 +111,7 @@
 						<div class="container">
 						<div class="text-center"></div>
 						<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
-						Tanggal Angsuran :
+						Tanggal Angsuran:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
 					<div class="col-sm-10">
@@ -119,7 +119,7 @@
 					</div>
 				</div>
 
-						No.Angsuran :
+						No.Angsuran:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="id_angsuran"></label>
 					<div class="col-sm-10">
@@ -127,7 +127,7 @@
 					</div>
 				</div>
 
-						No.Anggota :
+						No.Anggota:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="id_anggota"></label>
 					<div class="col-sm-10">
@@ -135,7 +135,7 @@
 					</div>
 				</div>
 
-				Nama :
+				Nama:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nama"></label>
 					<div class="col-sm-10">
@@ -143,7 +143,7 @@
 					</div>
 				</div>
 				
-				Sisa Peminjaman :
+				Sisa Peminjaman:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="sisa_pinjaman"></label>
 					<div class="col-sm-10">
@@ -151,7 +151,7 @@
 					</div>
 				</div>
 				
-				Angsuran Bulanan :
+				Angsuran Bulanan:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="angsuran_bulanan"></label>
 					<div class="col-sm-10">
@@ -159,7 +159,7 @@
 					</div>
 				</div>
 				
-				Denda :
+				Denda:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="denda"></label>
 					<div class="col-sm-10">
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 				
-				Total Bayar :
+				Total Bayar:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="total_bayar"></label>
 					<div class="col-sm-10">
@@ -175,7 +175,7 @@
 					</div>
 				</div>
 				
-				Bayar Angsuran :
+				Bayar Angsuran:
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="bayar_angsuran"></label>
 					<div class="col-sm-10">
@@ -233,6 +233,5 @@
 			<script type="text/javascript" src="assets/js/plugins.js"></script>
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
 		<script type="text/javascript" src="assets/js/init.js"></script>
-
 		</body>
 	</html>
