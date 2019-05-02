@@ -3,7 +3,7 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	session_start();
 	ob_start();
 	
-	
+
 	// echo "Welcome" .$_SESSION['username'];
 ?>
 <!DOCTYPE html>
@@ -24,12 +24,21 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
     <link href="assets/css/elusive-webfont.css" rel="stylesheet" >
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/pe-icons.css" rel="stylesheet">
- 	<link href="assets/css/style.css" rel="stylesheet">
+ 		<link href="assets/css/style.css" rel="stylesheet">
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     
     <script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+  	<style>
+  	.active, .collap {
+    display: none; 
+		overflow: hidden;
+  	}
+		</style>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -73,12 +82,21 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 						</li>
 
 							<li><a href="kontak.php">Kontak</a></li>
+
+							<li class="dropdown">
+						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="login2.php">Admin</a></li>
+							<li><a href="login3.php">Anggota</a></li>
+						</ul>
+					</li>
+
 						<li class="dropdown">
-							
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?><b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="logout.php">Logout</a></li>
-							</ul>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
+							<div class="dropdown-menu">
+								<h5><a href="logout.php">&nbsp; &nbsp; LOGOUT</a></h5>
+							</div>
 						</li>
 						
 							
