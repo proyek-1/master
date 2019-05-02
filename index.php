@@ -8,6 +8,8 @@
 	// 	echo "<script>location='login2.php'</script>";
 	// 	header('location:login2.php');
 	// 	exit();
+	// }else{
+
 	// }
 		// echo "Welcome" .$_SESSION['username'];
 	?>
