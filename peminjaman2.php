@@ -97,7 +97,7 @@
 
 		<!--  CONTENT WRAPPER -->
 		<div id="content-wrapper">		
-			
+			<div class = "text-center"></div> 
 			<section class="container page-section">
 				<div class="row black">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
@@ -170,7 +170,8 @@
 					<input type="submit" class="btn btn-success" name="RESET" value="reset" />
 					<input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
 				<tr>
-			</form>		
+			</form>	
+			</div>	
 		</div>
 	</section>
 					</div>
@@ -191,8 +192,8 @@
 					<div class="fade-up">
 						<p>kopmj@gmail.com</p>
 						<p>+62 856 876 987</p>
+						</div>
 					</div>
-				</div>
 			</section>
 		
 		<!-- CONTENT WRAPPER -->
