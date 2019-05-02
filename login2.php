@@ -125,6 +125,7 @@
 				</form>
 
 		<?php
+		error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 		if(isset($_POST['submit'])){
 			$uname = $_POST['username'];
 			$pwd = $_POST['password'];
