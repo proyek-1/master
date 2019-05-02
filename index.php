@@ -83,8 +83,7 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 
 							<li><a href="kontak.php">Kontak</a></li>
 
-							<li class="dropdown">
-						
+						<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="login2.php">Admin</a></li>
@@ -99,7 +98,6 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 							</div>
 						</li>
 						
-							
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
