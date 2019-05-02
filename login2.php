@@ -16,7 +16,7 @@
 			<link href="assets/css/elusive-webfont.css" rel="stylesheet" >
 			<link href="assets/css/animate.css" rel="stylesheet">
 			<link href="assets/css/pe-icons.css" rel="stylesheet">
-		<link href="assets/css/style.css" rel="stylesheet">
+			<link href="assets/css/style.css" rel="stylesheet">
 			
 			<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 			
@@ -134,9 +134,14 @@
 				$total = mysqli_num_rows($data);
 				if($total==1){
 									$_SESSION['username'] = $uname;
-					header ('Location: index.php?status=sukses');
+									// echo "<br><div class='alert alert-info'>Login Sukses</div>";
+									// echo ("meta http-equiv='refresh' content='1;url=index.php'>");
+									// header('location:index.php');
+									echo "<script>alert('Login Sukses')</script>";
+									echo "<script>location='index.php'</script>";
 				}else{
-					echo "login gagal";
+					echo "<br><div class='alert alert-danger'>Login Gagal</div>";
+					header ("meta http-equiv='refresh' content='1;url=login2.php'>");
 				}
 			}
 			?>
