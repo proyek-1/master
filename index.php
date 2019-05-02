@@ -95,7 +95,7 @@ error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
 							<div class="dropdown-menu">
-								<h5><a href="logout.php">&nbsp; &nbsp; LOGOUT</a></h5>
+								<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 							</div>
 						</li>
 						
