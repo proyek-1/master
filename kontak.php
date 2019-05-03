@@ -30,7 +30,7 @@
 			
 			<script src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-		
+		<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 		</head>
 
 	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -42,31 +42,32 @@
 			</div>  
 		
 			<div id="navbar-main">
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">				
-						<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
-						<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
-							<i class="el-icon-lines"></i>
-						</button>
-					</div>
-					<div class="navbar-collapse collapse" id="main-navigation">
-						<ul class="nav navbar-nav">
-									<li><a href="index.php">Home</a></li>
-									<li><a href="register.php">Daftar</a></li>
-							
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="peminjaman2.php">Peminjaman</a></li>
+				<div class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">				
+							<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
+							<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
+								<i class="el-icon-lines"></i>
+							</button>
+						</div>
+						<div class="navbar-collapse collapse" id="main-navigation">
+							<ul class="nav navbar-nav">
+										<li><a href="index.php">Home</a></li>
+		
+										<li><a href="register.php">Daftar</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="peminjaman2.php">Peminjaman</a></li>
 									<li><a href="angsuran.php">Angsuran</a></li>
 
 									<li><a href="dataangsuran.php">Data Angsuran</a></li>
 									<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
-								</ul>
-							</li>
-								<li><a href="kontak.php">Kontak</a></li>
-								<li class="dropdown">
+									</ul>
+								</li>
+									<li><a href="kontak.php">Kontak</a></li>
+
+									<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="login2.php">Admin</a></li>
@@ -80,6 +81,7 @@
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 								</div>
 							</li>
+
 							<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 						</ul>
 					</div>
@@ -89,98 +91,28 @@
 
 		<section class="textdivider single-post-header">
 			<div class="container">
-				<h1 class="fade-down">Peminjaman</h1>
+				<h1 class="fade-down">KONTAK KAMI</h1>
 				<hr class="mb60">
 			</div>
 		</section>
 
 
 		<!--  CONTENT WRAPPER -->
-		<div id="content-wrapper">		 
+		<div id="content-wrapper">		
+			
 			<section class="container page-section">
-				<div class="row black">
+				<div class="row white">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 
-						<div class="container">
-						<div class="text-center"></div>
-						<form class="form-horizontal" action="proses-input_peminjaman.php" method="POST">
-
-						<?php
-							$id = mt_rand(10000, 20000);
-						?>
-
-						Tanggal Angsuran :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="tanggal"></label>
-					<div class="col-sm-10">
-						<input type="date" class="form-control" id=>
+						<div id="message"></div>
+						<form method="post" action="sendemail.php" id="contactform">
+							<input type="text" name="name" id="name" placeholder="Name" />
+							<input type="text" name="email" id="email" placeholder="Email" />
+							<input type="text" name="website" id="website" placeholder="Website" />
+							<textarea name="comments" id="comments" placeholder="Comments"></textarea>
+							<input class="btn btn-success" type="submit" name="submit" value="Submit" />
+						</form>
 					</div>
-				</div>
-
-						No.Peminjaman :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="nopeminjaman"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nopeminjaman" value="<?= $id?>" disabled>
-					</div>
-				</div>
-
-						No.Anggota :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="noanggota"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="noanggota">
-					</div>
-				</div>
-
-				Nama :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="nama"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nama">
-					</div>
-				</div>
-				
-				Besar Peminjaman :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="besar"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="besar">
-					</div>
-				</div>
-				
-				Total Peminjaman
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="total"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="total">
-					</div>
-				</div>
-				
-				Keterangan :
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="keterangan"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="keterangan">
-					</div>
-				</div>				
-				<tr>
-					<input type="submit" class="btn btn-success" name="tambah" value="tambah" />
-					<input type="submit" class="btn btn-success" name="RESET" value="reset" />
-					<input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
-				<tr>
-			</form>	
-			</div>	
-		</div>
-	</section>
-					</div>
-				</div>
-			</div>
-		</header>
-	<td>
-		<td>
-			<td>
-				<td>
 				</div><!-- row -->
 			</section>
 					
@@ -191,10 +123,32 @@
 					<div class="fade-up">
 						<p>kopmj@gmail.com</p>
 						<p>+62 856 876 987</p>
-						</div>
 					</div>
+				</div>
 			</section>
-		
+				
+			<div class="text-center">
+				<div id="contact" class="container page-section">
+					<div class="row row white">
+						<div class="col-md-19 fade-up">
+							<h3>Kontak kami</h3>
+							<p><span class="icon icon-home"></span>Jl Soekarno Hatta no 62, Kota Malang<br/>
+								<span class="icon icon-phone"></span>+62 856 876 987<br/>
+								<span class="icon icon-mobile"></span>+32 734 56<br/>
+								<span class="icon icon-envelop"></span> <a href="#">kopmj@gmail.com</a> <br/>
+								<span class="icon icon-twitter"></span> <a href="#">@kopmj.com</a> <br/>
+								<span class="icon icon-facebook"></span> <a href="#">Koperasi Maju Jaya</a> <br/>
+							</p>
+						</div><!-- col -->
+						</div>
+							</form><!-- form -->
+					
+					</div><!-- col -->
+
+				</div><!-- row -->		
+			</div>
+
+		</div>
 		<!-- CONTENT WRAPPER -->
 
 		<div id="footerwrap">

@@ -11,13 +11,13 @@ if (isset($_POST['tambah'])){
 	$tanggal_meminjam = $_POST['tanggal_meminjam'];
 
 	$sql = "INSERT INTO peminjaman VALUES 
-	('$id_anggota', '$nama', '$besar_pinjaman', '$total_pinjaman', '$keterangan','$tanggal_meminjam')";
+	('$id_peminjaman', '$id_anggota', '$nama', '$besar_pinjaman', '$total_pinjaman', '$keterangan','$tanggal_meminjam')";
 	$query = mysqli_query($mysqli, $sql);
 
 	if ($query){
-		header('Location: index.html?status=sukses');
+		header('Location: index2.php?status=sukses');
 	} else {
-		header('Location: index.html?status=gagal');
+		header('Location: index2.php?status=gagal');
 	}
 } else {
 	die("Akses Dilarang!");

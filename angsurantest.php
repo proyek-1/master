@@ -22,7 +22,7 @@
     
     <script src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  
   </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -34,37 +34,30 @@
   	</div>  
   
   	<div id="navbar-main">
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">				
-						<a class="navbar-brand" href="index.html"><h1>Koperasi Maju Jaya</h1></a>
-						<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
-							<i class="el-icon-lines"></i>
-						</button>
-					</div>
-					<div class="navbar-collapse collapse" id="main-navigation">
-						<ul class="nav navbar-nav">
-									<li><a href="index.html">Home</a></li>
-	
-									<li><a href="register.php">Daftar</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="Peminjaman2.php">Peminjaman</a></li>
-									<li><a href="angsuran.php">Angsuran</a></li>
-									<li><a href="DataPeminjaman.html">Data Peminjaman</a></li>
-									<li><a href="Data Angsuran.php">Data Angsuran</a></li>
-								</ul>
-							</li>
-								<li><a href="kontak.html">Kontak</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="login.html">Admin</a></li>
-									<li><a href="login3.php">Anggota</a></li>
-								</ul>
-							</li>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">				
+					<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
+					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
+						<i class="el-icon-lines"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="main-navigation">
+					<ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="register.php">Daftar</a></li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+							<li><a href="peminjaman2.php">Peminjaman</a></li>
+								<li><a href="angsuran.php">Angsuran</a></li>
 
+								<li><a href="dataangsuran.php">Data Angsuran</a></li>
+								<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
+							</ul>
+						</li>
+							<li><a href="kontak.html">Kontak</a></li>
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>
@@ -74,28 +67,82 @@
 
 	<section class="textdivider single-post-header">
 		<div class="container">
-			<h1 class="fade-down">KONTAK KAMI</h1>
+			<h1 class="fade-down">Angsuran</h1>
 			<hr class="mb60">
 		</div>
 	</section>
 
 
 	<!--  CONTENT WRAPPER -->
-	<div id="content-wrapper">		
-		
-		<section class="container page-section">
-			<div class="row white">
-				<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+          
+	<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+	<form method="POST" action="proses-input_angsuran.php">
+  <table cellpadding="8">
+	<?php
+	$id = mt_rand(10000, 20000);
+	?>
+  <tr>
+    <td>No Angsuran</td>
+    <td><input type="text" name="id_angsuran" value="<?= $id?>" disabled></td>
+  </tr>
 
-					<div id="message"></div>
-					<form method="post" action="sendemail.php" id="contactform">
-						<input type="text" name="name" id="name" placeholder="Name" />
-						<input type="text" name="email" id="email" placeholder="Email" />
-						<input type="text" name="website" id="website" placeholder="Website" />
-						<textarea name="comments" id="comments" placeholder="Comments"></textarea>
-						<input class="btn btn-success" type="submit" name="submit" value="Submit" />
-					</form>
-				</div>
+  <tr>
+    <td>Tanggal Angsuran</td>
+    <td><input type="date" name="tanggal_angsuran"></td>
+  </tr>
+
+  <tr>
+    <td>No Anggota</td>
+    <td><input type="text" name="id_angsuran"></td>
+  </tr>
+
+  <tr>
+    <td>Nama</td>
+    <td><input type="text" name="nama"></td>
+  </tr>
+
+  <tr>
+    <td>Sisa Pinjaman</td>
+    <td><input type="text" name="sisa_pinjaman"></td>
+  </tr>
+
+	<tr>
+    <td>Angsuran Bulanan</td>
+    <td><input type="text" name="angsuran_bulanan"></td>
+  </tr>
+
+	<tr>
+    <td>Denda</td>
+    <td><input type="text" name="denda"></td>
+  </tr>
+
+	<tr>
+    <td>Total Bayar</td>
+    <td><input type="text" name="total_bayar"></td>
+  </tr>
+
+	<tr>
+    <td>Bayar Angsuran</td>
+    <td><input type="text" name="bayar_angsuran"></td>
+  </tr>
+  </table>
+  
+
+  <input type="submit" value="tambah">
+  <a href="daftar.php"><input type="button" value="Batal"></a>
+  </form>
+			</div>
+
+
+</section>
+        </div>
+      </div>
+    </div>
+  </header>
+<td>
+  <td>
+    <td>
+      <td>
 			</div><!-- row -->
 		</section>
 				
@@ -109,29 +156,7 @@
 				</div>
 			</div>
 		</section>
-			
-		<div class="text-center">
-			<div id="contact" class="container page-section">
-				<div class="row row white">
-					<div class="col-md-19 fade-up">
-						<h3>Kontak kami</h3>
-						<p><span class="icon icon-home"></span>Jl Soekarno Hatta no 62, Kota Malang<br/>
-							<span class="icon icon-phone"></span>+62 856 876 987<br/>
-							<span class="icon icon-mobile"></span>+32 734 56<br/>
-							<span class="icon icon-envelop"></span> <a href="#">kopmj@gmail.com</a> <br/>
-							<span class="icon icon-twitter"></span> <a href="#">@kopmj.com</a> <br/>
-							<span class="icon icon-facebook"></span> <a href="#">Koperasi Maju Jaya</a> <br/>
-						</p>
-					</div><!-- col -->
-					</div>
-					   </form><!-- form -->
-				
-				</div><!-- col -->
-
-			</div><!-- row -->		
-		</div>
-
-	</div>
+	
 	<!-- CONTENT WRAPPER -->
 
 	<div id="footerwrap">

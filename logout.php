@@ -1,9 +1,6 @@
 <?php
    session_start();
    session_destroy();
+   echo "<script>alert('Anda telah keluar')</script>";
+	echo "<script>location='index.php'</script>";
 ?>
-
-<div align="center">
-  <h2>Anda telah berhasil logout..</h2>
-  Silahkan klik <a href="homeKop.html">disini</a> untuk login kembali
-</div>

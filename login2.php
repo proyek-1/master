@@ -16,13 +16,13 @@
 			<link href="assets/css/elusive-webfont.css" rel="stylesheet" >
 			<link href="assets/css/animate.css" rel="stylesheet">
 			<link href="assets/css/pe-icons.css" rel="stylesheet">
-		<link href="assets/css/style.css" rel="stylesheet">
+			<link href="assets/css/style.css" rel="stylesheet">
 			
 			<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 			
 			<script src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-			
+
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
 				<script src="assets/js/html5shiv.js"></script>
@@ -55,82 +55,106 @@
 	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
 		<div id="preloader"></div>
-	<div id="navbar-main"> </div>
-		<div class="" align="center">
+
+			<div id="search-wrapper">
+				<input id="search-box" placeholder="Search" />
+			</div>  
 		
+			<div id="navbar-main"> </div>
+		<div class="" align="center">
+		<section class="textdivider single-post-header"> </section>
 		<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-					<form action="proses-input.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+
+			<?php
+			session_start();
+
+			ob_start();
+
+			include ("konek2.php");
+			?>
+
+					<form action="" id="formContoh" method="POST" class="login100-form validate-form flex-sb flex-w">
 						<span class="login100-form-title p-b-32">
-							<p class="tulisan_login"><h3 align="center">Register</h3></p>
+							<p class="tulisan_login"><h3 align="center">Silahkan Login</h3></p>
 						</span>
+
 						<span class="txt1 p-b-11">
-						Nama Anggota:
+							Username
 						</span>
 						<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-							<input class="input100" type="text" name="nama" placeholder="Nama">
+							<input class="input100" type="text" name="username" id="username">
 							<span class="focus-input100"></span>
 						</div>
-
-						<span class="txt1 p-b-11">
-						<br>Password:
-						</span>
-						<div class="wrap-input100 validate-input m-b-36" data-validate = "Password is required">
-							<input class="input100" type="password" name="password" placeholder="Password">
-							<span class="focus-input100"></span>
-						</div>
-
-						<span class="txt1 p-b-11">
-						<br>Jenis Kelamin:
-						</span>
-						<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
-						<input type="radio" name="jenis_kelamin" id="L" value="L">
-						<label for="L">Laki-Laki</label><br>
-						<input type="radio" name="jenis_kelamin" id="P" value="P">
-						<label for="P">Perempuan</label><br>
-						</div>
-
-						<span class="txt1 p-b-11">
-						<br>Alamat:
-						</span>
-						<div class="wrap-input100 validate-input m-b-36" data-validate = "Alamat is required">
-							<input class="input100" type="text" name="alamat" placeholder="Alamat">
-							<span class="focus-input100"></span>
-						</div>
-
-						<span class="txt1 p-b-11">
-						<br>Pekerjaan:
-						</span>
-						<div class="wrap-input100 validate-input m-b-36" data-validate = "Pekerjaan is required">
-							<input class="input100" type="text" name="pekerjaan" placeholder="Perkejaan">
-							<span class="focus-input100"></span>
-						</div>
-
-						<span class="txt1 p-b-11">
-						<br>No Telepon:
-						</span>
-						<div class="wrap-input100 validate-input m-b-36" data-validate = "No Telepon is required">
-							<input class="input100" type="text" name="no_handphone" placeholder="No Telepon">
-							<span class="focus-input100"></span>
-						</div>
-			
 						
+						<span class="txt1 p-b-11">
+							Password
+						</span>
+						<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+							<span class="btn-show-pass">
+							</span>
+							<input class="input100" type="password" name="password" >
+							<span class="focus-input100"></span>
+						</div>
 						
+						<div class="flex-sb-m w-full p-b-48">
+							<div class="contact100-form-checkbox">
+								<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+								<label class="label-checkbox100" for="ckb1">
+									Ingat Saya
+								</label>
+							</div>
+
+							<div>
+								<a href="#" class="txt3">
+									Lupa Password?
+								</a>
+							</div>
+						</div>
+
 						<div class="container-login100-form-btn">
-							<button type="submit" name="tambah" value="Tambah" class="login100-form-btn"> 
-								Register
+							<button type="submit" name="submit" class="login100-form-btn"> 
+								Login
 							</button>
-
 							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 							<button> 
 								<a href="index.php" style="color: black">Kembali</a>
 							</button>
-							</div>
-						</div>
-
 						</div>
 
 					</form>
+
+			<?php
+			error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
+			if(isset($_POST['submit'])){
+				$uname = $_POST['username'];
+				$pwd = $_POST['password'];
+				$query = "SELECT * FROM pegawai WHERE username = '$uname' && password = '$pwd'";
+				$data = mysqli_query($connect, $query);
+				$total = mysqli_num_rows($data);
+				if($total==1){
+									$_SESSION['username'] = $uname;
+									// echo "<br><div class='alert alert-info'>Login Sukses</div>";
+									// echo ("meta http-equiv='refresh' content='1;url=index.php'>");
+									// header('location:index.php');
+									echo "<script>alert('Login Sukses')</script>";
+									echo "<script>location='index.php'</script>";
+				}else{
+					echo "<br><div class='alert alert-danger'>Login Gagal</div>";
+					header ("meta http-equiv='refresh' content='1;url=login2.php'>");
+				}
+			}
+			?>
+
+			<?php
+			// if(!isset($_SESSION['pegawai'])) {
+			// 	echo "<script>alert('Anda harus login')</script>";
+			// 	echo "<script>location='index.php'</script>";
+			// 	header('location:login2.php');
+			// 	exit();
+			// }
+			?>
+
 				</div>
 		<!--  CONTENT WRAPPER -->
 		<div id="content-wrapper">
@@ -141,11 +165,11 @@
 	</div>
 	<!-- CONTENT WRAPPER -->
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="assets/js/plugins.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
-	<script type="text/javascript" src="assets/js/init.js"></script>
-		
-		
+			<script type="text/javascript" src="assets/js/plugins.js"></script>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+		<script type="text/javascript" src="assets/js/init.js"></script>
 
 	</body>
 	</html>
+
+
