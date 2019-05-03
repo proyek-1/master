@@ -53,7 +53,7 @@
 					<div class="navbar-collapse collapse" id="main-navigation">
 						<ul class="nav navbar-nav">
 									<li><a href="index.php">Home</a></li>
-									<li><a href="daftar.php">Daftar</a></li>
+									<li><a href="register.php">Daftar</a></li>
 							
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>

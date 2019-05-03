@@ -103,7 +103,7 @@
 
 						<div class="container">
 						<div class="text-center"></div>
-						<form class="form-horizontal">
+						<form class="form-horizontal" METHOD="post" action="proses-input_peminjaman.php">
 
 						<?php
 							$id = mt_rand(10000, 20000);
@@ -119,7 +119,7 @@
 
 						No.Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="nopeminjaman"></label>
+					<label class="control-label col-sm-2" for="id_peminjaman"></label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="nopeminjaman" value="<?= $id?>" disabled>
 					</div>
@@ -127,9 +127,9 @@
 
 						No.Anggota :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="noanggota"></label>
+					<label class="control-label col-sm-2" for="id_anggota"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="noanggota">
+						<input type="text" class="form-control" id="id_anggota" nama="id_anggota">
 					</div>
 				</div>
 
@@ -137,7 +137,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nama"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nama">
+						<input type="text" class="form-control" id="nama" name="nama">
 					</div>
 				</div>
 				
@@ -145,7 +145,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="besar"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="besar">
+						<input type="text" class="form-control" id="besar_pinjaman">
 					</div>
 				</div>
 				
@@ -153,7 +153,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="total"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="total">
+						<input type="text" class="form-control" id="total_pinjaman" name="total_pinjaman">
 					</div>
 				</div>
 				
@@ -165,7 +165,7 @@
 					</div>
 				</div>				
 				<tr>
-					<input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+					<input type="submit" class="btn btn-success" name="tambah" value="tambah" />
 					<input type="submit" class="btn btn-success" name="RESET" value="reset" />
 					<input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
 				<tr>
