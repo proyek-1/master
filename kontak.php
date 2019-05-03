@@ -65,9 +65,9 @@
 									<li><a href="DataPeminjaman2.php">Data Peminjaman</a></li>
 									</ul>
 								</li>
-									<li><a href="kontak.php">Kontak</a></li
+									<li><a href="kontak.php">Kontak</a></li>
 
-							<li class="dropdown">
+									<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
