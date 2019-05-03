@@ -157,7 +157,6 @@
 					</div>
 				</div>
 			</section>
-		
 		<!-- CONTENT WRAPPER -->
 
 		<div id="footerwrap">

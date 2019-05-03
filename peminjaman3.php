@@ -83,7 +83,7 @@
           <div class="container">
 					<div class="text-center"></div>
 					<form class="form-horizontal">
-          Tanggal Angsuran :
+          Tanggal Angsuran:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal"></label>
 				<div class="col-sm-10">
@@ -91,7 +91,7 @@
 				</div>
       </div>
 
-          No.Peminjaman :
+          No.Peminjaman:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nopeminjaman"></label>
 				<div class="col-sm-10">
@@ -99,7 +99,7 @@
 				</div>
       </div>
 
-           No.Anggota :
+           No.Anggota:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="noanggota"></label>
 				<div class="col-sm-10">
@@ -107,7 +107,7 @@
 				</div>
       </div>
 
-      Nama :
+      Nama:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="nama"></label>
 				<div class="col-sm-10">
@@ -115,7 +115,7 @@
 				</div>
       </div>
       
-      Besar Peminjaman :
+      Besar Peminjaman:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="besar"></label>
 				<div class="col-sm-10">
@@ -123,7 +123,7 @@
 				</div>
       </div>
       
-      Total Peminjaman
+      Total Peminjaman:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="total"></label>
 				<div class="col-sm-10">
@@ -131,7 +131,7 @@
 				</div>
       </div>
       
-      Keterangan :
+      Keterangan:
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="keterangan"></label>
 				<div class="col-sm-10">
