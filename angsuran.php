@@ -77,7 +77,6 @@
 							<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 						</ul>
 					</div>
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
