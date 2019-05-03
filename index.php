@@ -9,10 +9,16 @@
 	// 	header('location:login2.php');
 	// 	exit();
 	// }else{
+	// }
+
+	if(!$login==0) {
+		
+	}else{
+		echo $login;
+	}
 
 		$login = LOGIN;
 
-	// }
 		// echo "Welcome" .$_SESSION['username'];
 	?>
 	<!DOCTYPE html>
@@ -41,13 +47,6 @@
 			
 			<script src="assets/js/jquery.min.js"></script>
 			<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
-			<style>
-			.active, .collap {
-			display: none; 
-			overflow: hidden;
-			}
-			</style>
 			
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
