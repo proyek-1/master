@@ -1,3 +1,11 @@
+	<?php
+	error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
+		session_start();
+		ob_start();
+		
+
+		// echo "Welcome" .$_SESSION['username'];
+	?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,14 +45,14 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">				
-					<a class="navbar-brand" href="index2.php"><h1>Koperasi Maju Jaya</h1></a>
+					<a class="navbar-brand" href="index.php"><h1>Koperasi Maju Jaya</h1></a>
 					<button type="button" class="navbar-toggle dropdown-toggle" id="open-menu" data-toggle="dropdown" data-target="#main-navigation">
 						<i class="el-icon-lines"></i>
 					</button>
 				</div>
 				<div class="navbar-collapse collapse" id="main-navigation">
 					<ul class="nav navbar-nav">
-                <li><a href="index2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="register.php">Daftar</a></li>
 						
 						<li class="dropdown">
@@ -58,6 +66,14 @@
 							</ul>
 						</li>
 							<li><a href="kontak.php">Kontak</a></li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
+								<div class="dropdown-menu">
+									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
+								</div>
+							</li>
+							
 						<li> <a href="#" class="search-trigger"><i class="el-icon-search"></i></a></li>
 					</ul>
 				</div>

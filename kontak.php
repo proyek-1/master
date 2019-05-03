@@ -68,14 +68,6 @@
 									<li><a href="kontak.php">Kontak</a></li>
 
 									<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="login2.php">Admin</a></li>
-								<li><a href="login3.php">Anggota</a></li>
-							</ul>
-						</li>
-
-							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
