@@ -159,7 +159,7 @@
 				</div>
 			</div>				
 			<tr>
-        <input type="submit" class="btn btn-success" name="TAMBAH" value="tambah" />
+        <input type="submit" class="btn btn-success" name="tambah" value="tambah" />
         <input type="submit" class="btn btn-success" name="RESET" value="reset" />
         <input type="submit" class="btn btn-success" name="KEMBALI" value="kembali" />
       <tr>
