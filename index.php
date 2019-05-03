@@ -10,6 +10,8 @@
 	// 	exit();
 	// }else{
 
+		$login = LOGIN;
+
 	// }
 		// echo "Welcome" .$_SESSION['username'];
 	?>
@@ -91,7 +93,7 @@
 								<li><a href="kontak.php">Kontak</a></li>
 
 							<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$login?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="login2.php">Admin</a></li>
 								<li><a href="login3.php">Anggota</a></li>
