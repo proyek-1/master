@@ -13,7 +13,7 @@ $sql = "DELETE FROM angsuran WHERE id_angsuran = '$_GET[id_angsuran]'";
 
     <?php 
 $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
-mysqli_query($mysqli, "DELETE FROM barang WHERE id = '$_GET[id]'");
+mysqli_query($mysqli, "DELETE FROM angsuran WHERE id_angsuran = '$_GET[id_angsuran]'");
 echo "<script type='text/javascript'>alert('Data Terhapus!');</script>";
-echo "<script type='text/javascript'>location='daftar.php';</script>";
+echo "<script type='text/javascript'>location='index.php';</script>";
 ?> 
