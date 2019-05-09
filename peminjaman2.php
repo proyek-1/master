@@ -100,13 +100,14 @@
 
 						<?php
 							$id = mt_rand(10000, 20000);
+							$today = date("d/m/Y"); 
 						?>
 
-						Tanggal Angsuran :
+						Tanggal Peminjaman :
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="tanggal"></label>
 					<div class="col-sm-10">
-						<input type="date" class="form-control" id=>
+						<input type="date" class="form-control" value="<?=$today?>">
 					</div>
 				</div>
 
