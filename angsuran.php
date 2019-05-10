@@ -99,6 +99,7 @@
   </div>
 	<?php
 	$id = mt_rand(10000, 20000);
+	 $today = date("Y-m-d");
 	?>
           <div class="container">
 					<div class="text-center"></div>
@@ -107,7 +108,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
 				<div class="col-sm-10">
-					<input type="date" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran">
+					<input type="text" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran" value ="<?= $today?>" disabled>
 				</div>
       </div>
 

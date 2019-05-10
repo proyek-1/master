@@ -107,7 +107,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="tanggal"></label>
 					<div class="col-sm-10">
-						<input type="date" class="form-control" value="<?=$today?>">
+						<input type="text" class="form-control" value="<?=$today?>" disabled>
 					</div>
 				</div>
 
