@@ -147,11 +147,24 @@
 				?>
 
 			<?php
-			// if(!isset($_SESSION['pegawai'])) {
-			// 	echo "<script>alert('Anda harus login')</script>";
-			// 	echo "<script>location='index.php'</script>";
-			// 	header('location:login2.php');
-			// 	exit();
+			if(isset($_SESSION['username'])) {
+				// echo "<br><div class='alert alert-info'>Login Sukses</div>";
+				// echo "<script>location='login2.php'</script>";
+				// header('location:login2.php');
+				// exit();
+			}else{
+				// echo "<script>alert('Anda harus logout')</script>";
+				// echo "<script>location='index.php'</script>";
+				// header('location:login2.php');
+			}
+
+			// if(isset($_POST['username']==1)) {
+			// 	echo "<br><div class='alert alert-info'>anda harus Logout dulu</div>";
+			// 	// echo ("meta http-equiv='refresh' content='1;url=index.php'>");
+			// 	header('location:index.php');
+			// }else{
+			// 	echo "<br><div class='alert alert-danger'>Login Gagal</div>";
+			// 	header ("meta http-equiv='refresh' content='1;url=index.php'>");
 			// }
 			?>
 
