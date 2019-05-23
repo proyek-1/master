@@ -126,7 +126,6 @@
 
 			<?php
 			error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
-<<<<<<< HEAD
 				if(isset($_POST['submit'])){
 					$uname = $_POST['username'];
 					$pwd = $_POST['password'];
@@ -146,34 +145,26 @@
 					}
 				}
 				?>
-=======
-			if(isset($_POST['submit'])){
-				$uname = $_POST['username'];
-				$pwd = $_POST['password'];
-				$query = "SELECT * FROM pegawai WHERE username = '$uname' && password = '$pwd'";
-				$data = mysqli_query($connect, $query);
-				$total = mysqli_num_rows($data);
-				if($total==1){
-									$_SESSION['username'] = $uname;
-									// echo "<br><div class='alert alert-info'>Login Sukses</div>";
-									// echo ("meta http-equiv='refresh' content='1;url=index.php'>");
-									// header('location:index.php');
-									echo "<script>alert('Login Sukses')</script>";
-									echo "<script>location='index.php'</script>";
-				}else{
-					echo "<br><div class='alert alert-danger'>Login Gagal</div>";
-					header ("meta http-equiv='refresh' content='1;url=login2.php'>");
-				}
-			}
-			?>
->>>>>>> test
 
 			<?php
-			// if(!isset($_SESSION['pegawai'])) {
-			// 	echo "<script>alert('Anda harus login')</script>";
-			// 	echo "<script>location='index.php'</script>";
-			// 	header('location:login2.php');
-			// 	exit();
+			if(isset($_SESSION['username'])) {
+				// echo "<br><div class='alert alert-info'>Login Sukses</div>";
+				// echo "<script>location='login2.php'</script>";
+				// header('location:login2.php');
+				// exit();
+			}else{
+				// echo "<script>alert('Anda harus logout')</script>";
+				// echo "<script>location='index.php'</script>";
+				// header('location:login2.php');
+			}
+
+			// if(isset($_POST['username']==1)) {
+			// 	echo "<br><div class='alert alert-info'>anda harus Logout dulu</div>";
+			// 	// echo ("meta http-equiv='refresh' content='1;url=index.php'>");
+			// 	header('location:index.php');
+			// }else{
+			// 	echo "<br><div class='alert alert-danger'>Login Gagal</div>";
+			// 	header ("meta http-equiv='refresh' content='1;url=index.php'>");
 			// }
 			?>
 
