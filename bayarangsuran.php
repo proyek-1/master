@@ -1,10 +1,24 @@
 <?php
-        $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
-        mysqli_query($mysqli, "UPDATE peminjaman SET denda = (besar_pinjaman*0.1) WHERE id_anggota = '$_GET[id_anggota]'");
-        echo "<script type='text/javascript'>alert('!');</script>";
+        // $mysqli = mysqli_connect('localhost', 'root', '', 'koperasi');
+        // mysqli_query($mysqli, "UPDATE peminjaman SET besar_pinjaman = (besar_pinjaman+(besar_pinjaman*0.10)) WHERE id_anggota = '$_GET[id_anggota]'");
+        // echo "<script type='text/javascript'>alert('!');</script>";
         // echo "<script type='text/javascript'>location='index.php';</script>";
-        
+        include ("konek.php");
 
+
+        $sql = "UPDATE peminjaman SET besar_pinjaman = (besar_pinjaman+(besar_pinjaman*0.10)) WHERE id_anggota = '$_GET[id_anggota]'";
+	$query = mysqli_query($mysqli, $sql);
+
+        if ($query){
+		header('Location: Datapeminjaman2.php?status=sukses');
+        } else {
+                header('Location: Datapeminjaman2.php?status=gagal');
+                } 
+
+
+
+
+        // UPDATE peminjaman SET besar_pinjaman = (besar_pinjaman+(besar_pinjaman*0.10)) WHERE id_anggota = '$_GET[id_anggota]';
         // $sql = "INSERT INTO anggota
 	// VALUES ('$id_anggota','$nama', '$password', '$jenis_kelamin', '$alamat', '$pekerjaan', '$no_handphone')";
         // $query = mysqli_query($mysqli, $sql);

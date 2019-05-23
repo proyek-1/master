@@ -95,12 +95,9 @@
 			<section class="container page-section">
 				<div class="row white">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-					<p>
 				<section class="main">
-					<div class="container">
-		<p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
 		<form class="form-horizontal">
-		<table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
+		<table class="table table-bordered table-striped" border="1" align="right" cellpadding="1" cellspacing="2">
 			<thead>
 				<tr>
 					<th>No Peminjaman</th>
@@ -124,13 +121,8 @@
 					<td><?php echo $hasil['id_anggota']?></td>
 					<td><?php echo $hasil['nama']?></td>
 					<td><?php echo $hasil['besar_pinjaman']?></td>
-					<td><?php echo $hasil['total_pinjaman']?></td>
 					<td><?php echo $hasil['keterangan']?></td>
 					<td><?php echo $hasil['tanggal_meminjam']?></td>
-					<td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
-								<a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
-						</center>
-						</td>
 				</tr>
 				<?php }?>
 			</tbody>
@@ -142,7 +134,6 @@
 		<!-- <input type="submit" value="Kembali"> -->
 		</div>
 		</form>
-	</div>
 	</section>
 					</div>
 				</div>

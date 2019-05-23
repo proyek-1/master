@@ -88,7 +88,9 @@
 		</div>
 	</section>
 
-
+	<?php
+i
+?>
 	<!--  CONTENT WRAPPER -->
 	<div id="content-wrapper">		
 		
@@ -124,27 +126,12 @@
           <div class="container">
 					<div class="text-center"></div>
 					<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
-          Tanggal Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran" value ="<?= $today?>" disabled>
-				</div>
-      </div>
-
-          No.Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="id_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="id_angsuran" name="id_angsuran" value="<?= $id?>" disabled>
-				</div>
-      </div>
 
            No.Anggota :
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="id_anggota"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="id_anggota" name="id_anggota">
+					<input type="text" class="form-control" id="id_anggota" name="id_anggota" value="<?php echo $nama; ?>">
 				</div>
       </div>
 
