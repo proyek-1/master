@@ -107,7 +107,6 @@
 					<th>No Anggota</th>
 					<th>Nama</th>
 					<th>Besar Pinjaman</th>
-					<th>Total Pinjaman</th>
 					<th>Keterangan</th>
 					<th>Tanggal Peminjaman</th>
 				</tr>
