@@ -99,7 +99,27 @@
   </div>
 	<?php
 	$id = mt_rand(10000, 20000);
-	 $today = date("Y-m-d");
+	//cara pertama
+	$today = date("Y-m-d");// tanggal sekarang
+	$tgl_mulai ="2019-05-2019";//tanggal mulai
+	$jangka_waktu = strtotime('+4 days', strtotime($tgl_mulai));//jangka waktu 30 hari
+	$tgl_exp=date("Y-m-d",$jangka_waktu);//tanggal exp
+	if($today>=$tgl_exp){
+		echo "Anda terkena denda";
+	}else{
+		echo "Masih dalam jangka waktu";
+	}
+
+	// string waktu mulai dan string waktu berakhir/exp
+	//cara kedua
+	$mulai = date ("2019-05-23");//waktu mulai
+	$exp = date ("2019-06-23");//expired
+
+	if(!(strtotime($mulai) <= time() AND time() >= strtotime($exp))){
+		echo "batas waktu berakhir, anda terkena denda";
+	}else{
+		echo "Masih dalam jangka waktu";
+	}
 	?>
           <div class="container">
 					<div class="text-center"></div>
