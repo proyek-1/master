@@ -166,15 +166,7 @@
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="total_bayar" name="total_bayar">
 				</div>
-      </div>
-      
-      Bayar Angsuran :
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="bayar_angsuran"></label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="bayar_angsuran" name="bayar_angsuran">
-				</div>
-			</div>				
+      </div>				
 			<tr>
         <input type="submit" class="btn btn-success" name="tambah" value="tambah" />
         <input type="submit" class="btn btn-success" name="RESET" value="reset" />
