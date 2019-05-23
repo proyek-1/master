@@ -103,27 +103,27 @@
 							$today = date("d/m/Y"); 
 						?>
 
-						Tanggal Peminjaman :
+						<!-- Tanggal Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="tanggal"></label>
+					<label class="control-label col-sm-2" for="tanggal_meminjam"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" value="<?=$today?>" disabled>
+						<input type="text" class="form-control" id="tanggal_meminjam" name="tanggal_meminjam"  disabled>
 					</div>
-				</div>
+				</div> -->
 
-						No.Peminjaman :
+						<!-- No.Peminjaman :
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="id_peminjaman"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nopeminjaman" value="<?= $id?>" disabled>
+						<input type="text" class="form-control" id="id_peminjaman" disabled>
 					</div>
-				</div>
+				</div> -->
 
 						No.Anggota :
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="id_anggota"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="id_anggota" nama="id_anggota">
+						<input type="text" class="form-control" id="id_anggota" name="id_anggota">
 					</div>
 				</div>
 
@@ -137,17 +137,9 @@
 				
 				Besar Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="besar"></label>
+					<label class="control-label col-sm-2" for="besar_pinjaman"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="besar_pinjaman">
-					</div>
-				</div>
-				
-				Total Peminjaman
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="total"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="total_pinjaman" name="total_pinjaman">
+						<input type="text" class="form-control" id="besar_pinjaman" name="besar_pinjaman">
 					</div>
 				</div>
 				
@@ -155,7 +147,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="keterangan"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="keterangan">
+						<input type="text" class="form-control" id="keterangan" name="keterangan">
 					</div>
 				</div>				
 				<tr>
