@@ -22,7 +22,6 @@
     
     <script src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-  
   </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -69,7 +68,7 @@
 				</div>
 			</div>
 		</div>
-    </div>
+   </div>
 
 	<section class="textdivider single-post-header">
 		<div class="container">

@@ -9,10 +9,8 @@
 	// 	header('location:login2.php');
 	// 	exit();
 	// }else{
+
 	// }
-
-	$login = LOGIN;
-
 		// echo "Welcome" .$_SESSION['username'];
 	?>
 	<!DOCTYPE html>
@@ -41,6 +39,13 @@
 			
 			<script src="assets/js/jquery.min.js"></script>
 			<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+			<style>
+			.active, .collap {
+			display: none; 
+			overflow: hidden;
+			}
+			</style>
 			
 			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
@@ -86,7 +91,7 @@
 								<li><a href="kontak.php">Kontak</a></li>
 
 							<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$login?><b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="login2.php">Admin</a></li>
 								<li><a href="login3.php">Anggota</a></li>
@@ -94,7 +99,7 @@
 						</li>
 
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?> <?=$_SESSION['nama']?></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?><?=$_SESSION['nama']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 								</div>
@@ -130,18 +135,22 @@
 					<h3 style="color: black">MISI<br></h3>
 					<h4>1. Meningkatkan pelayanan simpan pinjam untuk usaha produktif anggota Koperasi <br>
 						2. Meningkatkan pelayanan kebutuhan pokok anggota<br>
-						3. Meningkatkan peran serta anggota Koperasi dalam pengembangan Koperasi ke 
-						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arah yang lebih maju dan produktif<br>
+						3. Meningkatkan peran serta anggota Koperasi dalam pengembangan Koperasi ke &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arah yang lebih maju dan produktif<br>
 						4. Meningkatkan pembinaan anggota dalam pengembangan usaha unggulan lokalita<br>
 						5. Meningkatkan kemitraan dengan pihak lain dalam pengembangan Koperasi </h4>
 					</div>
 					<div align=""><br>
 					<h3 style="color: black">TUJUAN<br></h3>
 					<h4>1. Meningkatkan tali persaudaraan dan kebersamaan diantara sesama anggota &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Koperasi <br>
+<<<<<<< HEAD
 						2. Memberdayakan kegiatan Koperasi hingga fungsinya lebih maksimal, efisien, efektif 
 						&nbsp; &nbsp; dan produktif dalam meningkatkan kesejahteraan anggotanya<br>
 						3. Meningkatkan pendapatan serta pemerataan kesejahteraan anggota Koperasi 
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; secara profesional<br>
+=======
+						2. Memberdayakan kegiatan Koperasi hingga fungsinya lebih maksimal, efisien, efektif &nbsp; &nbsp; dan produktif dalam meningkatkan kesejahteraan anggotanya<br>
+						3. Meningkatkan pendapatan serta pemerataan kesejahteraan anggota Koperasi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; secara profesional<br>
+>>>>>>> 90137228071c879465c2d552323b1950ac13ad32
 						4. Membuka lapangan pekerjaan baru yang terbuka bagi anggota koperasi dan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; keluarganya <br>
 						</h4>
 					</div>

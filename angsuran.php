@@ -88,8 +88,7 @@
 		</div>
 	</section>
 
-	<?php
-?>
+
 	<!--  CONTENT WRAPPER -->
 	<div id="content-wrapper">		
 		
@@ -100,36 +99,31 @@
   </div>
 	<?php
 	$id = mt_rand(10000, 20000);
-	//cara pertama
-	$today = date("Y-m-d");// tanggal sekarang
-	$tgl_mulai ="2019-05-2019";//tanggal mulai
-	// $jangka_waktu = strtotime('+4 days', strtotime($tgl_mulai));//jangka waktu 30 hari
-	// $tgl_exp=date("Y-m-d",$jangka_waktu);//tanggal exp
-	// if($today>=$tgl_exp){
-	// 	echo "Anda terkena denda";
-	// }else{
-	// 	echo "Masih dalam jangka waktu";
-	// }
-
-	// string waktu mulai dan string waktu berakhir/exp
-	//cara kedua
-	// $mulai = date ("2019-05-23");//waktu mulai
-	// $exp = date ("2019-06-23");//expired
-
-	// if(!(strtotime($mulai) <= time() AND time() >= strtotime($exp))){
-	// 	echo "batas waktu berakhir, anda terkena denda";
-	// }else{
-	// 	echo "Masih dalam jangka waktu";
-	// }
 	?>
           <div class="container">
+					<div class="text-center"></div>
 					<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
+          <!-- Tanggal Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="tanggal_angsuran"></label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" id="tanggal_angsuran" name="tanggal_angsuran">
+				</div>
+      </div>
+
+          No.Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="id_angsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="id_angsuran" name="id_angsuran" value="<?= $id?>" disabled>
+				</div>
+      </div> -->
 
            No.Anggota :
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="id_anggota"></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="id_anggota" name="id_anggota" value="<?php echo $nama; ?>">
+					<input type="text" class="form-control" id="id_anggota" name="id_anggota">
 				</div>
       </div>
 
@@ -171,7 +165,15 @@
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="total_bayar" name="total_bayar">
 				</div>
-      </div>				
+      </div>
+      
+      Bayar Angsuran :
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="bayar_angsuran"></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="bayar_angsuran" name="bayar_angsuran">
+				</div>
+			</div>				
 			<tr>
         <input type="submit" class="btn btn-success" name="tambah" value="tambah" />
         <input type="submit" class="btn btn-success" name="RESET" value="reset" />

@@ -53,7 +53,7 @@
 					<div class="navbar-collapse collapse" id="main-navigation">
 						<ul class="nav navbar-nav">
 									<li><a href="index.php">Home</a></li>
-									<li><a href="register.php">Daftar</a></li>
+									<li><a href="daftar.php">Daftar</a></li>
 							
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
@@ -95,15 +95,17 @@
 			<section class="container page-section">
 				<div class="row white">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
+					<p>
 				<section class="main">
 		<form class="form-horizontal">
-		<table class="table table-bordered table-striped" border="1" align="right" cellpadding="1" cellspacing="2">
+		<table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
 			<thead>
 				<tr>
 					<th>No Peminjaman</th>
 					<th>No Anggota</th>
 					<th>Nama</th>
 					<th>Besar Pinjaman</th>
+					<th>Total Pinjaman</th>
 					<th>Keterangan</th>
 					<th>Tanggal Peminjaman</th>
 				</tr>
@@ -121,19 +123,15 @@
 					<td><?php echo $hasil['id_anggota']?></td>
 					<td><?php echo $hasil['nama']?></td>
 					<td><?php echo $hasil['besar_pinjaman']?></td>
+					<td><?php echo $hasil['total_pinjaman']?></td>
 					<td><?php echo $hasil['keterangan']?></td>
 					<td><?php echo $hasil['tanggal_meminjam']?></td>
+					<td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+								<a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+						</center>
+						</td>
 				</tr>
-				<?php 
-				// $mulai = date ("tanggal_peminjaman");//waktu mulai
-				// $exp = date ("Y-m-d");//expired
-			
-				// if(!(strtotime() <= time() AND time() >= strtotime($exp))){
-				// 	echo "batas waktu berakhir, anda terkena denda";
-				// }else{
-				// 	echo "Masih dalam jangka waktu";
-				}
-				?>
+				<?php }?>
 			</tbody>
 			</div>
 			</section>
@@ -143,6 +141,7 @@
 		<!-- <input type="submit" value="Kembali"> -->
 		</div>
 		</form>
+	</div>
 	</section>
 					</div>
 				</div>

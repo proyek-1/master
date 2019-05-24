@@ -127,7 +127,9 @@
 					<td><?php echo $hasil['angsuran_bulanan']?></td>
 					<td><?php echo $hasil['denda']?></td>
 					<td><?php echo $hasil['total_bayar']?></td>
-					<td><center><a href="bayarangsuran.php?id=<?php echo $hasil['id_angsuran'];?>">Bayar</a>
+					<td><?php echo $hasil['bayar_angsuran']?></td>
+					<td><center><a href="from_edit.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
+								<a href="proses_hapus.php?id=<?php echo $hasil['id'];?>">hapus</a>
 						</center>
 						</td>
 				</tr>
