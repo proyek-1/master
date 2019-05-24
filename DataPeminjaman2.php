@@ -97,8 +97,6 @@
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
 					<p>
 				<section class="main">
-					<div class="container">
-		<p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
 		<form class="form-horizontal">
 		<table class="table table-bordered table-striped" border="1" align="left" cellpadding="5" cellspacing="2">
 			<thead>
