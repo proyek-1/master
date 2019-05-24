@@ -96,7 +96,6 @@
 			<section class="container page-section">
 				<div class="row white">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-					<p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
 		<table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
 			<thead>
 				<tr>
