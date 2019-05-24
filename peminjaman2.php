@@ -93,36 +93,35 @@
 			<section class="container page-section">
 				<div class="row black">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-
-						<div class="container">
 						<div class="text-center"></div>
 						<form class="form-horizontal" action="proses-input_peminjaman.php" method="POST">
 
 						<?php
 							$id = mt_rand(10000, 20000);
+							$today = date("d/m/Y"); 
 						?>
 
-						Tanggal Angsuran :
+						<!-- Tanggal Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="tanggal"></label>
+					<label class="control-label col-sm-2" for="tanggal_meminjam"></label>
 					<div class="col-sm-10">
-						<input type="date" class="form-control" id=>
+						<input type="text" class="form-control" id="tanggal_meminjam" name="tanggal_meminjam"  disabled>
 					</div>
-				</div>
+				</div> -->
 
-						No.Peminjaman :
+						<!-- No.Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="nopeminjaman"></label>
+					<label class="control-label col-sm-2" for="id_peminjaman"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nopeminjaman" value="<?= $id?>" disabled>
+						<input type="text" class="form-control" id="id_peminjaman" disabled>
 					</div>
-				</div>
+				</div> -->
 
 						No.Anggota :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="noanggota"></label>
+					<label class="control-label col-sm-2" for="id_anggota"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="noanggota">
+						<input type="text" class="form-control" id="id_anggota" name="id_anggota">
 					</div>
 				</div>
 
@@ -130,23 +129,15 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nama"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nama">
+						<input type="text" class="form-control" id="nama" name="nama">
 					</div>
 				</div>
 				
 				Besar Peminjaman :
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="besar"></label>
+					<label class="control-label col-sm-2" for="besar_pinjaman"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="besar">
-					</div>
-				</div>
-				
-				Total Peminjaman
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="total"></label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" id="total">
+						<input type="text" class="form-control" id="besar_pinjaman" name="besar_pinjaman">
 					</div>
 				</div>
 				
@@ -154,7 +145,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="keterangan"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="keterangan">
+						<input type="text" class="form-control" id="keterangan" name="keterangan">
 					</div>
 				</div>				
 				<tr>

@@ -1,17 +1,17 @@
 <?php
 include ("konek.php");
-
+$id = mt_rand(10000, 20000);
+$today = date("d/m/Y"); 
 if (isset($_POST['tambah'])){
-	$id_peminjaman = $_POST['id_peminjaman'];
+	// $id_peminjaman = $_POST['id_peminjaman'];
 	$id_anggota = $_POST['id_anggota'];
 	$nama = $_POST['nama'];
 	$besar_pinjaman = $_POST['besar_pinjaman'];
-	$total_pinjaman = $_POST['total_pinjaman'];
 	$keterangan = $_POST['keterangan'];
-	$tanggal_meminjam = $_POST['tanggal_meminjam'];
+	// $tanggal_meminjam = $_POST['tanggal_meminjam'];
 
 	$sql = "INSERT INTO peminjaman VALUES 
-	('$id_peminjaman', '$id_anggota', '$nama', '$besar_pinjaman', '$total_pinjaman', '$keterangan','$tanggal_meminjam')";
+	('$id', '$id_anggota', '$nama', '$besar_pinjaman', '$keterangan','$today')";
 	$query = mysqli_query($mysqli, $sql);
 
 	if ($query){
