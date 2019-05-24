@@ -1,7 +1,7 @@
 <?php
 include ("konek.php");
 $id = mt_rand(10000, 20000);
-$today = date("d/m/Y"); 
+$today = date("Y/m/d"); 
 if (isset($_POST['tambah'])){
 	// $id_angsuran = $_POST['id_angsuran'];
 	// $tanggal_angsuran = $_POST['tanggal_angsuran'];
