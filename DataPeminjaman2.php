@@ -125,13 +125,13 @@
 					<td><?php echo $hasil['tanggal_meminjam']?></td>
 				</tr>
 				<?php 
-				$mulai = date ("tanggal_peminjaman");//waktu mulai
-				$exp = date ("Y-m-d");//expired
+				// $mulai = date ("tanggal_peminjaman");//waktu mulai
+				// $exp = date ("Y-m-d");//expired
 			
-				if(!(strtotime() <= time() AND time() >= strtotime($exp))){
-					echo "batas waktu berakhir, anda terkena denda";
-				}else{
-					echo "Masih dalam jangka waktu";
+				// if(!(strtotime() <= time() AND time() >= strtotime($exp))){
+				// 	echo "batas waktu berakhir, anda terkena denda";
+				// }else{
+				// 	echo "Masih dalam jangka waktu";
 				}
 				?>
 			</tbody>

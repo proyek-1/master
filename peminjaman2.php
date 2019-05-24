@@ -93,8 +93,6 @@
 			<section class="container page-section">
 				<div class="row black">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-
-						<div class="container">
 						<div class="text-center"></div>
 						<form class="form-horizontal" METHOD="post" action="proses-input_peminjaman.php">
 
