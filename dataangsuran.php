@@ -69,7 +69,7 @@
 								
 
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?> <?=$_SESSION['nama']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 								</div>
@@ -96,7 +96,6 @@
 			<section class="container page-section">
 				<div class="row white">
 					<div class="fade-up col-md-offset-2 col-md-8 single-post-content">
-					<p><a href="angsuran.php" style="color: black;">Tambah Data</a><br><br><p>
 		<table class="table table-bordered table-striped" border="1" align="center" cellpadding="5" cellspacing="2">
 			<thead>
 				<tr>
