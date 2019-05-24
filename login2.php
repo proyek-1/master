@@ -134,7 +134,7 @@
 					$total = mysqli_num_rows($data);
 					if($total==1){
 						$_SESSION['username'] = $uname;
-						echo "<br><div class='alert alert-info'>Login Sukses</div>";
+						// echo "<br><div class='alert alert-info'>Login Sukses</div>";
 						echo ("meta http-equiv='refresh' content='1;url=index.php'>");
 						header('location:index.php');
 						// echo "<script>alert('Login Sukses')</script>";

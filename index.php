@@ -94,7 +94,7 @@
 						</li>
 
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['nama']?></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?> <?=$_SESSION['nama']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 								</div>
