@@ -142,15 +142,10 @@
 					<div align=""><br>
 					<h3 style="color: black">TUJUAN<br></h3>
 					<h4>1. Meningkatkan tali persaudaraan dan kebersamaan diantara sesama anggota &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Koperasi <br>
-<<<<<<< HEAD
 						2. Memberdayakan kegiatan Koperasi hingga fungsinya lebih maksimal, efisien, efektif 
 						&nbsp; &nbsp; dan produktif dalam meningkatkan kesejahteraan anggotanya<br>
 						3. Meningkatkan pendapatan serta pemerataan kesejahteraan anggota Koperasi 
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; secara profesional<br>
-=======
-						2. Memberdayakan kegiatan Koperasi hingga fungsinya lebih maksimal, efisien, efektif &nbsp; &nbsp; dan produktif dalam meningkatkan kesejahteraan anggotanya<br>
-						3. Meningkatkan pendapatan serta pemerataan kesejahteraan anggota Koperasi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; secara profesional<br>
->>>>>>> 90137228071c879465c2d552323b1950ac13ad32
 						4. Membuka lapangan pekerjaan baru yang terbuka bagi anggota koperasi dan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; keluarganya <br>
 						</h4>
 					</div>
