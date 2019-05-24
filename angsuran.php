@@ -89,7 +89,6 @@
 	</section>
 
 	<?php
-i
 ?>
 	<!--  CONTENT WRAPPER -->
 	<div id="content-wrapper">		
@@ -124,7 +123,6 @@ i
 	// }
 	?>
           <div class="container">
-					<div class="text-center"></div>
 					<form class="form-horizontal"action="proses-input_angsuran.php" method="post">
 
            No.Anggota :
