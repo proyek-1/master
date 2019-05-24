@@ -68,7 +68,7 @@
 								<li><a href="kontak.php">Kontak</a></li>
 
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$_SESSION['username']?> <?=$_SESSION['nama']?></a>
 								<div class="dropdown-menu">
 									<h5><a href="logout.php" style="color: black">&nbsp; &nbsp; LOGOUT</a></h5>
 								</div>
@@ -129,7 +129,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nama"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nama" name="nama">
+						<input type="text" class="form-control" id="nama" name="nama" value="<?=$_SESSION['nama']?>">
 					</div>
 				</div>
 				
