@@ -129,7 +129,7 @@
 				<div class="form-group">
 					<label class="control-label col-sm-2" for="nama"></label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nama" name="nama">
+						<input type="text" class="form-control" id="nama" name="nama" value="<?=$_SESSION['nama']?>">
 					</div>
 				</div>
 				
