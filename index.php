@@ -2,7 +2,7 @@
 	error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 		session_start();
 		ob_start();
-		
+	//ini
 	// if(isset($_SESSION['pegawai'])) {
 	// 	echo "<script>alert('Anda harus login')</script>";
 	// 	echo "<script>location='login2.php'</script>";
