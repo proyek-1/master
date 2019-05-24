@@ -6,6 +6,7 @@
 	}else{
 		echo "belum konek";
 	}
+	//baru
 ?>
 
 <!-- a
